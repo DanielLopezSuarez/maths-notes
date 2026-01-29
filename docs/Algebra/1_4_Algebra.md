@@ -19,6 +19,8 @@ $$
 
 **Example:**
 
+Consider this system:
+
 $$
 \begin{cases} 
 2x + y - z = 8 \\ 
@@ -174,9 +176,11 @@ $$
 $$
 
 * Inverse:
-  $$
-  A^{-1} = \begin{pmatrix} 5 & -9 \\ -1 & 2 \end{pmatrix}
-  $$
+
+$$
+A^{-1} = \begin{pmatrix} 5 & -9 \\ -1 & 2 \end{pmatrix}
+$$
+
 * **Result:** $x=5, y=-1$.
 
 **Task 3: Gaussian Elimination**
