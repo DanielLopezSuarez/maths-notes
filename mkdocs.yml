@@ -14,10 +14,21 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-# Añade esto para tener el menú ordenado
 nav:
   - Home: index.md
-  - Algebra: algebra.md
-  - Calculus: calculus.md
-  - Geometry: geometry.md
-  - Interactive Calculator: https://daniel-derivative-calculator.streamlit.app/
+  - Algebra:
+      - '1_1_Algebra': Algebra/1_1_Algebra.md
+      - '1_2_Algebra': Algebra/1_2_Algebra.md
+      - '1_3_Algebra': Algebra/1_3_Algebra.md
+      - '1_4_Algebra': Algebra/1_4_Algebra.md
+  - Geometry:
+      - '2_1_Geometry': Geometry/2_1_Geometry.md
+      - '2_2_Geometry': Geometry/2_2_Geometry.md
+      - '2_3_Geometry': Geometry/2_3_Geometry.md
+  - Calculus:
+      - '3_1_Calculus': Calculus/3_1_Calculus.md
+      - '3_2_Calculus': Calculus/3_2_Calculus.md
+      - '3_3_Calculus': Calculus/3_3_Calculus.md
+      - '3_4_Calculus': Calculus/3_4_Calculus.md
+      - '3_5_Calculus': Calculus/3_5_Calculus.md
+  - 🧮 Interactive Calculator: https://daniel-derivative-calculator.streamlit.app/
