@@ -29,7 +29,6 @@ z = z_0 + c \cdot t
 $$
 
 
-
 ### Step 3: Example Calculation
 
 Find the line passing through $P(1, 2, 3)$ parallel to $\vec{v}=[4, 5, 6]$.
@@ -78,7 +77,6 @@ If you have 3 points ($A, B, C$), you can find the plane by:
 1.  Creating two vectors: $\vec{u} = \vec{AB}$ and $\vec{v} = \vec{AC}$.
 2.  Finding the Normal via Cross Product: $\vec{n} = \vec{u} \times \vec{v}$.
 3.  Plugging $\vec{n}$ and point $A$ into the formula above.
-
 
 
 ### Step 3: Example Calculation
@@ -141,14 +139,19 @@ $$
 Line through $A(1, 2, 3)$ and $B(4, 4, 4)$.
 * **Vector:** $\vec{v} = B - A = [3, 2, 1]$.
 * **Result:**
-  $$
-  x=1+3t, \ y=2+2t, \ z=3+t
-  $$
+
+$$
+x=1+3t, \ y=2+2t, \ z=3+t
+$$
 
 **Task 2: Plane from Point & Normal**
 Point $P(5, 5, 5)$, Normal $\vec{n}=[1, 0, -2]$.
 * **Substitute:** $1(x-5) + 0(y-5) - 2(z-5) = 0$.
-* **Result:** $x - 2z + 5 = 0$.
+* **Result:**
+
+$$
+x - 2z + 5 = 0
+$$
 
 **Task 3: Intersection**
 Line $x=t, y=t, z=t$ and Plane $x+y+z=9$.

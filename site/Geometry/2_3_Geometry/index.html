@@ -1169,10 +1169,12 @@
 <h3 id="step-1-defining-a-line-point-vector">Step 1: Defining a Line (Point + Vector)</h3>
 <p>In 3D, we define a line using an <strong>Anchor Point</strong> (<span class="arithmatex">\(P_0\)</span>) and a <strong>Direction Vector</strong> (<span class="arithmatex">\(\vec{v}\)</span>).
 Imagine standing at <span class="arithmatex">\(P_0\)</span> and walking in the direction of <span class="arithmatex">\(\vec{v}\)</span> for time <span class="arithmatex">\(t\)</span>.</p>
-<p><strong>The Vector Equation:</strong>
-$<span class="arithmatex">\(P = P_0 + t\vec{v}\)</span>$</p>
+<p><strong>The Vector Equation:</strong></p>
+<div class="arithmatex">\[
+P = P_0 + t\vec{v}
+\]</div>
 <h3 id="step-2-parametric-equation">Step 2: Parametric Equation</h3>
-<p>Breaking this down into coordinates (<span class="arithmatex">\(x, y, z\)</span>):
+<p>Breaking this down into coordinates (<span class="arithmatex">\(x, y, z\)</span>).
 Given <span class="arithmatex">\(P_0(x_0, y_0, z_0)\)</span> and <span class="arithmatex">\(\vec{v}=[a, b, c]\)</span>:</p>
 <div class="arithmatex">\[
 \begin{cases} 
@@ -1183,26 +1185,31 @@ z = z_0 + c \cdot t
 \]</div>
 <h3 id="step-3-example-calculation">Step 3: Example Calculation</h3>
 <p>Find the line passing through <span class="arithmatex">\(P(1, 2, 3)\)</span> parallel to <span class="arithmatex">\(\vec{v}=[4, 5, 6]\)</span>.</p>
-<p><strong>Equation:</strong>
-$$
+<p><strong>Equation:</strong></p>
+<div class="arithmatex">\[
 \begin{cases} 
-x = 1 + 4t \ 
-y = 2 + 5t \ 
+x = 1 + 4t \\ 
+y = 2 + 5t \\ 
 z = 3 + 6t 
 \end{cases}
-$$</p>
+\]</div>
 <p><strong>Find a point at <span class="arithmatex">\(t=2\)</span>:</strong>
 * <span class="arithmatex">\(x = 1 + 8 = 9\)</span>
 * <span class="arithmatex">\(y = 2 + 10 = 12\)</span>
-* <span class="arithmatex">\(z = 3 + 12 = 15 \implies Q(9, 12, 15)\)</span>.</p>
+* <span class="arithmatex">\(z = 3 + 12 = 15\)</span>
+* <strong>Result:</strong> Point <span class="arithmatex">\(Q(9, 12, 15)\)</span>.</p>
 <hr />
 <h2 id="topic-2-the-equation-of-a-plane">Topic 2: The Equation of a Plane</h2>
 <h3 id="step-1-defining-a-plane-point-normal">Step 1: Defining a Plane (Point + Normal)</h3>
 <p>To lock a plane in 3D, we need an <strong>Anchor Point</strong> (<span class="arithmatex">\(P_0\)</span>) and a <strong>Normal Vector</strong> (<span class="arithmatex">\(\vec{n}\)</span>) that stands perpendicular (<span class="arithmatex">\(90^\circ\)</span>) to the surface.</p>
-<p><strong>The General Equation:</strong>
-$<span class="arithmatex">\(A(x-x_0) + B(y-y_0) + C(z-z_0) = 0\)</span>$
-Simplifies to:
-$<span class="arithmatex">\(Ax + By + Cz + D = 0\)</span>$</p>
+<p><strong>The General Equation:</strong></p>
+<div class="arithmatex">\[
+A(x-x_0) + B(y-y_0) + C(z-z_0) = 0
+\]</div>
+<p><strong>Simplifies to:</strong></p>
+<div class="arithmatex">\[
+Ax + By + Cz + D = 0
+\]</div>
 <p><em>(Where <span class="arithmatex">\([A, B, C]\)</span> is the Normal Vector <span class="arithmatex">\(\vec{n}\)</span>)</em>.</p>
 <h3 id="step-2-plane-from-3-points">Step 2: Plane from 3 Points</h3>
 <p>If you have 3 points (<span class="arithmatex">\(A, B, C\)</span>), you can find the plane by:
@@ -1211,10 +1218,14 @@ $<span class="arithmatex">\(Ax + By + Cz + D = 0\)</span>$</p>
 3.  Plugging <span class="arithmatex">\(\vec{n}\)</span> and point <span class="arithmatex">\(A\)</span> into the formula above.</p>
 <h3 id="step-3-example-calculation_1">Step 3: Example Calculation</h3>
 <p>Find the plane through <span class="arithmatex">\(P(1, 2, 0)\)</span> perpendicular to <span class="arithmatex">\(\vec{n}=[3, 4, 5]\)</span>.</p>
-<p><strong>Substitute:</strong>
-$<span class="arithmatex">\(3(x-1) + 4(y-2) + 5(z-0) = 0\)</span>$
-<strong>Simplify:</strong>
-$<span class="arithmatex">\(3x - 3 + 4y - 8 + 5z = 0 \implies 3x + 4y + 5z - 11 = 0\)</span>$</p>
+<p><strong>Substitute:</strong></p>
+<div class="arithmatex">\[
+3(x-1) + 4(y-2) + 5(z-0) = 0
+\]</div>
+<p><strong>Simplify:</strong></p>
+<div class="arithmatex">\[
+3x - 3 + 4y - 8 + 5z = 0 \implies 3x + 4y + 5z - 11 = 0
+\]</div>
 <hr />
 <h2 id="topic-3-mutual-positions-intersections">Topic 3: Mutual Positions (Intersections)</h2>
 <h3 id="1-line-and-plane">1. Line and Plane</h3>
@@ -1224,11 +1235,17 @@ $<span class="arithmatex">\(3x - 3 + 4y - 8 + 5z = 0 \implies 3x + 4y + 5z - 11 
 <p><strong>Example:</strong>
 Plane: <span class="arithmatex">\(2x + 3y - z = 6\)</span>
 Line: <span class="arithmatex">\(x=1+t, \ y=2+t, \ z=3+5t\)</span></p>
-<p><strong>Substitute:</strong>
-$<span class="arithmatex">\(2(1+t) + 3(2+t) - (3+5t) = 6\)</span>$
-$<span class="arithmatex">\(2 + 2t + 6 + 3t - 3 - 5t = 6\)</span>$
-$<span class="arithmatex">\(5 = 6\)</span>$
-<em>Conclusion:</em> Impossible. The line is <strong>Parallel</strong> to the plane (No intersection).</p>
+<p><strong>Substitute:</strong></p>
+<div class="arithmatex">\[
+2(1+t) + 3(2+t) - (3+5t) = 6
+\]</div>
+<div class="arithmatex">\[
+2 + 2t + 6 + 3t - 3 - 5t = 6
+\]</div>
+<div class="arithmatex">\[
+5 = 6
+\]</div>
+<p><strong>Conclusion:</strong> Impossible. The line is <strong>Parallel</strong> to the plane (No intersection).</p>
 <h3 id="2-two-lines-in-3d">2. Two Lines in 3D</h3>
 <ul>
 <li><strong>Parallel:</strong> Direction vectors are proportional.</li>
@@ -1239,15 +1256,18 @@ $<span class="arithmatex">\(5 = 6\)</span>$
 <h2 id="finale-comprehensive-test">Finale: Comprehensive Test</h2>
 <p><strong>Task 1: Line from 2 Points</strong>
 Line through <span class="arithmatex">\(A(1, 2, 3)\)</span> and <span class="arithmatex">\(B(4, 4, 4)\)</span>.
-* <span class="arithmatex">\(\vec{v} = B - A = [3, 2, 1]\)</span>.
-* <strong>Result:</strong> <span class="arithmatex">\(x=1+3t, \ y=2+2t, \ z=3+t\)</span>.</p>
+* <strong>Vector:</strong> <span class="arithmatex">\(\vec{v} = B - A = [3, 2, 1]\)</span>.
+* <strong>Result:</strong>
+  $$
+  x=1+3t, \ y=2+2t, \ z=3+t
+  $$</p>
 <p><strong>Task 2: Plane from Point &amp; Normal</strong>
 Point <span class="arithmatex">\(P(5, 5, 5)\)</span>, Normal <span class="arithmatex">\(\vec{n}=[1, 0, -2]\)</span>.
-* <span class="arithmatex">\(1(x-5) + 0(y-5) - 2(z-5) = 0\)</span>.
+* <strong>Substitute:</strong> <span class="arithmatex">\(1(x-5) + 0(y-5) - 2(z-5) = 0\)</span>.
 * <strong>Result:</strong> <span class="arithmatex">\(x - 2z + 5 = 0\)</span>.</p>
 <p><strong>Task 3: Intersection</strong>
 Line <span class="arithmatex">\(x=t, y=t, z=t\)</span> and Plane <span class="arithmatex">\(x+y+z=9\)</span>.
-* <span class="arithmatex">\(t + t + t = 9 \implies 3t=9 \implies t=3\)</span>.
+* <strong>Solve:</strong> <span class="arithmatex">\(t + t + t = 9 \implies 3t=9 \implies t=3\)</span>.
 * <strong>Result:</strong> Point <span class="arithmatex">\((3, 3, 3)\)</span>.</p>
 <hr />
 <h2 id="applications">Applications</h2>
