@@ -8,13 +8,16 @@ This section covers the three ways to multiply vectors: the **Dot Product** (for
 The dot product takes two vectors and returns a **scalar** (a single number).
 
 * **Algebraic Formula:** Multiply corresponding components and sum them.
-    $$
-    \vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3
-    $$
+
+$$
+\vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3
+$$
+
 * **Geometric Formula:** Using the angle $\theta$ between them.
-    $$
-    \vec{u} \cdot \vec{v} = \|\vec{u}\| \|\vec{v}\| \cos(\theta)
-    $$
+
+$$
+\vec{u} \cdot \vec{v} = \|\vec{u}\| \|\vec{v}\| \cos(\theta)
+$$
 
 ### Step 2: Interpreting the Result
 * **Positive:** Acute angle ($< 90^\circ$).
@@ -24,7 +27,12 @@ The dot product takes two vectors and returns a **scalar** (a single number).
 ### Step 3: Calculation Example
 Find the dot product and angle between $\vec{u}=[1, 2, 3]$ and $\vec{v}=[-2, 1, 0]$.
 
-1.  **Dot Product:** $(1)(-2) + (2)(1) + (3)(0) = -2 + 2 + 0 = \mathbf{0}$.
+1.  **Dot Product:**
+
+    $$
+    (1)(-2) + (2)(1) + (3)(0) = -2 + 2 + 0 = \mathbf{0}
+    $$
+
 2.  **Conclusion:** Since the result is 0, the vectors are **Perpendicular** ($\theta = 90^\circ$).
 
 ---
@@ -56,6 +64,7 @@ $$
 * $\mathbf{k}$-term: $(1)(1) - (0)(0) = 1$
 
 **Result:** $[0, 0, 1]$ (Vector pointing straight up the Z-axis).
+
 **Area:** Magnitude is $\sqrt{0+0+1} = 1$.
 
 ---
@@ -64,6 +73,7 @@ $$
 
 ### Step 1: Definition
 Combines three vectors ($\vec{u}, \vec{v}, \vec{w}$) to find a scalar.
+
 $$
 \text{Triple Product} = \vec{u} \cdot (\vec{v} \times \vec{w}) = \det \begin{vmatrix} u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \\ w_1 & w_2 & w_3 \end{vmatrix}
 $$
@@ -78,6 +88,7 @@ Check if $\vec{u}=[1, 2, 3]$, $\vec{v}=[4, 5, 6]$, and $\vec{w}=[7, 8, 9]$ are c
 $$
 \det \begin{vmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{vmatrix} = 0
 $$
+
 *(Calculation: $1(45-48) - 2(36-42) + 3(32-35) = -3 + 12 - 9 = 0$)*
 
 **Conclusion:** The result is 0, so they are **Coplanar**.
@@ -88,25 +99,34 @@ $$
 
 **Task 1: Angle (Dot Product)**
 Vectors: $\vec{a}=[2, 2, 0]$, $\vec{b}=[0, 3, 0]$.
-* $\vec{a} \cdot \vec{b} = 6$.
-* Lengths: $\|\vec{a}\| = \sqrt{8}$, $\|\vec{b}\| = 3$.
-* $\cos \theta = \frac{6}{3\sqrt{8}} = \frac{1}{\sqrt{2}} \implies \theta = 45^\circ$.
+* **Calculation:** $\vec{a} \cdot \vec{b} = 6$.
+* **Lengths:** $\|\vec{a}\| = \sqrt{8}$, $\|\vec{b}\| = 3$.
+* **Result:**
+  $$
+  \cos \theta = \frac{6}{3\sqrt{8}} = \frac{1}{\sqrt{2}} \implies \theta = 45^\circ
+  $$
 
 **Task 2: Perpendicular Vector (Cross Product)**
 Vectors: $\vec{u}=[1, 0, 0]$, $\vec{v}=[1, 1, 0]$.
-* $\vec{u} \times \vec{v} = [0, 0, 1]$.
+* **Result:** $\vec{u} \times \vec{v} = [0, 0, 1]$.
 
 **Task 3: Coplanarity (Triple Product)**
 Vectors: $\vec{a}=[1, 0, 0]$, $\vec{b}=[0, 1, 0]$, $\vec{c}=[1, 1, 1]$.
-* Determinant = $1$.
-* Result is not 0 $\to$ **Not Coplanar**. Volume = 1.
+* **Determinant:** $1$.
+* **Result:** Not 0 $\to$ **Not Coplanar**. Volume = 1.
 
 ---
 
 ## Applications
 
-* **Physics (Torque):** Torque is a cross product: $\tau = \vec{r} \times \vec{F}$.
-* **Physics (Work):** Work is a dot product: $W = \vec{F} \cdot \vec{d}$.
+* **Physics (Torque):** Torque is a cross product:
+  $$
+  \tau = \vec{r} \times \vec{F}
+  $$
+* **Physics (Work):** Work is a dot product:
+  $$
+  W = \vec{F} \cdot \vec{d}
+  $$
 * **Computer Graphics (Lighting):** The brightness of a pixel is calculated using the **Dot Product** between the light ray vector and the surface normal vector.
 
 **Next Step:** Lines and Planes in 3D Space.
