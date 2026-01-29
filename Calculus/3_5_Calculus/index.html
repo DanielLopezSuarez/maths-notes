@@ -1333,20 +1333,29 @@ Your velocity (<span class="arithmatex">\(v\)</span>) is constant. The equation 
 <h3 id="step-3-practice-task">Step 3: Practice Task</h3>
 <p><strong>Exercise:</strong> Solve <span class="arithmatex">\(y' = 2x\)</span>. Then find the particular solution for <span class="arithmatex">\(y(0) = 5\)</span>.</p>
 <ol>
-<li><strong>Integrate:</strong>
-    $$
-    \int y' \, dx = \int 2x \, dx
-    $$</li>
-<li><strong>General Solution:</strong>
-    $$
-    y = x^2 + C
-    $$</li>
-<li><strong>Apply Condition:</strong> Plug in <span class="arithmatex">\(x=0\)</span> and <span class="arithmatex">\(y=5\)</span>.
-    <span class="arithmatex">\(5 = (0)^2 + C \implies C = 5\)</span>.</li>
-<li><strong>Particular Solution:</strong>
-    $$
-    y = x^2 + 5
-    $$</li>
+<li>
+<p><strong>Integrate:</strong></p>
+<div class="arithmatex">\[
+\int y' \, dx = \int 2x \, dx
+\]</div>
+</li>
+<li>
+<p><strong>General Solution:</strong></p>
+<div class="arithmatex">\[
+y = x^2 + C
+\]</div>
+</li>
+<li>
+<p><strong>Apply Condition:</strong>
+    Plug in <span class="arithmatex">\(x=0\)</span> and <span class="arithmatex">\(y=5\)</span>.
+    <span class="arithmatex">\(5 = (0)^2 + C \implies C = 5\)</span>.</p>
+</li>
+<li>
+<p><strong>Particular Solution:</strong></p>
+<div class="arithmatex">\[
+y = x^2 + 5
+\]</div>
+</li>
 </ol>
 <h3 id="step-4-mini-quiz">Step 4: Mini-Quiz</h3>
 <p>Determine the order of these equations:</p>
@@ -1361,59 +1370,85 @@ Your velocity (<span class="arithmatex">\(v\)</span>) is constant. The equation 
 <p>Method used when you can group all <span class="arithmatex">\(y\)</span>'s on one side and all <span class="arithmatex">\(x\)</span>'s on the other.</p>
 <p><strong>Example:</strong> Solve <span class="arithmatex">\(y' = y \cdot x\)</span>.</p>
 <ol>
-<li><strong>Rewrite:</strong>
-    $$
-    \frac{dy}{dx} = yx
-    $$</li>
-<li><strong>Separate:</strong>
-    $$
-    \frac{1}{y} dy = x \, dx
-    $$</li>
-<li><strong>Integrate:</strong>
-    $$
-    \ln|y| = \frac{1}{2}x^2 + C
-    $$</li>
-<li><strong>Solve for y:</strong>
-    $$
-    y = e^{\frac{1}{2}x^2 + C} = e^C \cdot e^{\frac{1}{2}x^2}
-    $$
-    <em>(We rename <span class="arithmatex">\(e^C\)</span> as a new constant <span class="arithmatex">\(A\)</span>)</em>.
-    <strong>Result:</strong> <span class="arithmatex">\(y = A e^{\frac{1}{2}x^2}\)</span>.</li>
+<li>
+<p><strong>Rewrite:</strong></p>
+<div class="arithmatex">\[
+\frac{dy}{dx} = yx
+\]</div>
+</li>
+<li>
+<p><strong>Separate:</strong></p>
+<div class="arithmatex">\[
+\frac{1}{y} dy = x \, dx
+\]</div>
+</li>
+<li>
+<p><strong>Integrate:</strong></p>
+<div class="arithmatex">\[
+\ln|y| = \frac{1}{2}x^2 + C
+\]</div>
+</li>
+<li>
+<p><strong>Solve for y:</strong></p>
+<div class="arithmatex">\[
+y = e^{\frac{1}{2}x^2 + C} = e^C \cdot e^{\frac{1}{2}x^2}
+\]</div>
+<p><em>(We rename <span class="arithmatex">\(e^C\)</span> as a new constant <span class="arithmatex">\(A\)</span>)</em>.
+<strong>Result:</strong></p>
+<div class="arithmatex">\[
+y = A e^{\frac{1}{2}x^2}
+\]</div>
+</li>
 </ol>
 <h3 id="step-2-interactive-task-radioactive-decay">Step 2: Interactive Task (Radioactive Decay)</h3>
 <p><strong>Exercise:</strong> Solve <span class="arithmatex">\(y' = -2y\)</span>.</p>
 <ol>
-<li><strong>Separate:</strong>
-    $$
-    \frac{dy}{y} = -2 \, dx
-    $$</li>
-<li><strong>Integrate:</strong>
-    $$
-    \ln|y| = -2x + C
-    $$</li>
-<li><strong>Exponentiate:</strong>
-    $$
-    y = Ce^{-2x}
-    $$</li>
+<li>
+<p><strong>Separate:</strong></p>
+<div class="arithmatex">\[
+\frac{dy}{y} = -2 \, dx
+\]</div>
+</li>
+<li>
+<p><strong>Integrate:</strong></p>
+<div class="arithmatex">\[
+\ln|y| = -2x + C
+\]</div>
+</li>
+<li>
+<p><strong>Exponentiate:</strong></p>
+<div class="arithmatex">\[
+y = Ce^{-2x}
+\]</div>
+</li>
 </ol>
 <p><strong>Phenomenon:</strong> This models <strong>Radioactive Decay</strong>. The substance decreases exponentially over time.</p>
 <h3 id="step-3-mini-quiz">Step 3: Mini-Quiz</h3>
 <p><strong>Exercise:</strong> Find the general solution for <span class="arithmatex">\(y' = \frac{x}{y}\)</span>.</p>
 <ol>
-<li><strong>Separate:</strong>
-    $$
-    y \, dy = x \, dx
-    $$</li>
-<li><strong>Integrate:</strong>
-    $$
-    \frac{1}{2}y^2 = \frac{1}{2}x^2 + C
-    $$</li>
-<li><strong>Simplify:</strong>
-    $$
-    y^2 = x^2 + 2C
-    $$
-    <em>(Let <span class="arithmatex">\(2C = K\)</span>)</em>.
-    <strong>Result:</strong> <span class="arithmatex">\(y = \sqrt{x^2 + K}\)</span>.</li>
+<li>
+<p><strong>Separate:</strong></p>
+<div class="arithmatex">\[
+y \, dy = x \, dx
+\]</div>
+</li>
+<li>
+<p><strong>Integrate:</strong></p>
+<div class="arithmatex">\[
+\frac{1}{2}y^2 = \frac{1}{2}x^2 + C
+\]</div>
+</li>
+<li>
+<p><strong>Simplify:</strong></p>
+<div class="arithmatex">\[
+y^2 = x^2 + 2C
+\]</div>
+<p><em>(Let <span class="arithmatex">\(2C = K\)</span>)</em>.
+<strong>Result:</strong></p>
+<div class="arithmatex">\[
+y = \sqrt{x^2 + K}
+\]</div>
+</li>
 </ol>
 <hr />
 <h2 id="topic-3-second-order-linear-equations">Topic 3: Second-Order Linear Equations</h2>
@@ -1425,46 +1460,64 @@ ar^2 + br + c = 0
 <h3 id="step-2-roots-and-solutions">Step 2: Roots and Solutions</h3>
 <p>The solution depends on the roots of the quadratic (<span class="arithmatex">\(r\)</span>):</p>
 <ul>
-<li><strong>Two Real Roots (<span class="arithmatex">\(r_1, r_2\)</span>):</strong>
-    $$
-    y = C_1e^{r_1x} + C_2e^{r_2x}
-    $$</li>
-<li><strong>One Repeated Root (<span class="arithmatex">\(r\)</span>):</strong>
-    $$
-    y = C_1e^{rx} + C_2xe^{rx}
-    $$</li>
-<li><strong>Complex Roots (<span class="arithmatex">\(\alpha \pm \beta i\)</span>):</strong>
-    $$
-    y = e^{\alpha x}(C_1 \cos(\beta x) + C_2 \sin(\beta x))
-    $$</li>
+<li>
+<p><strong>Two Real Roots (<span class="arithmatex">\(r_1, r_2\)</span>):</strong></p>
+<div class="arithmatex">\[
+y = C_1e^{r_1x} + C_2e^{r_2x}
+\]</div>
+</li>
+<li>
+<p><strong>One Repeated Root (<span class="arithmatex">\(r\)</span>):</strong></p>
+<div class="arithmatex">\[
+y = C_1e^{rx} + C_2xe^{rx}
+\]</div>
+</li>
+<li>
+<p><strong>Complex Roots (<span class="arithmatex">\(\alpha \pm \beta i\)</span>):</strong></p>
+<div class="arithmatex">\[
+y = e^{\alpha x}(C_1 \cos(\beta x) + C_2 \sin(\beta x))
+\]</div>
+</li>
 </ul>
 <h3 id="step-3-interactive-task">Step 3: Interactive Task</h3>
 <p><strong>Exercise:</strong> Solve <span class="arithmatex">\(y'' + 5y' + 4y = 0\)</span>.</p>
 <ol>
-<li><strong>Characteristic Equation:</strong>
-    $$
-    r^2 + 5r + 4 = 0
-    $$</li>
-<li><strong>Factor:</strong>
-    <span class="arithmatex">\((r+4)(r+1) = 0 \implies r = -4, \ r = -1\)</span>.</li>
-<li><strong>General Solution:</strong>
-    $$
-    y = C_1e^{-4x} + C_2e^{-x}
-    $$</li>
+<li>
+<p><strong>Characteristic Equation:</strong></p>
+<div class="arithmatex">\[
+r^2 + 5r + 4 = 0
+\]</div>
+</li>
+<li>
+<p><strong>Factor:</strong>
+    <span class="arithmatex">\((r+4)(r+1) = 0 \implies r = -4, \ r = -1\)</span>.</p>
+</li>
+<li>
+<p><strong>General Solution:</strong></p>
+<div class="arithmatex">\[
+y = C_1e^{-4x} + C_2e^{-x}
+\]</div>
+</li>
 </ol>
 <h3 id="step-4-mini-quiz_1">Step 4: Mini-Quiz</h3>
 <p><strong>Exercise:</strong> Solve <span class="arithmatex">\(y'' - 6y' + 9y = 0\)</span>.</p>
 <ol>
-<li><strong>Characteristic Equation:</strong>
-    $$
-    r^2 - 6r + 9 = 0
-    $$</li>
-<li><strong>Factor:</strong>
-    <span class="arithmatex">\((r-3)^2 = 0 \implies r = 3\)</span> (Repeated).</li>
-<li><strong>General Solution:</strong>
-    $$
-    y = C_1e^{3x} + C_2xe^{3x}
-    $$</li>
+<li>
+<p><strong>Characteristic Equation:</strong></p>
+<div class="arithmatex">\[
+r^2 - 6r + 9 = 0
+\]</div>
+</li>
+<li>
+<p><strong>Factor:</strong>
+    <span class="arithmatex">\((r-3)^2 = 0 \implies r = 3\)</span> (Repeated).</p>
+</li>
+<li>
+<p><strong>General Solution:</strong></p>
+<div class="arithmatex">\[
+y = C_1e^{3x} + C_2xe^{3x}
+\]</div>
+</li>
 </ol>
 <hr />
 <h2 id="topic-4-applications">Topic 4: Applications</h2>
@@ -1478,11 +1531,11 @@ Describes a mass on a spring bouncing back and forth.
 <div class="arithmatex">\[
 \frac{dP}{dt} = kP
 \]</div>
-<p><strong>Solution:</strong>
-$$
+<p><strong>Solution:</strong></p>
+<div class="arithmatex">\[
 P(t) = P_0e^{kt}
-$$
-This is <strong>Exponential Growth</strong>.</p>
+\]</div>
+<p>This is <strong>Exponential Growth</strong>.</p>
 <hr />
 <h2 id="finale-comprehensive-test">Finale: Comprehensive Test</h2>
 <p><strong>Problem 1: First-Order</strong>
@@ -1490,20 +1543,24 @@ Solve <span class="arithmatex">\(y' = 3x^2y\)</span>.</p>
 <ul>
 <li><strong>Separate:</strong> <span class="arithmatex">\(\frac{dy}{y} = 3x^2 dx\)</span>.</li>
 <li><strong>Integrate:</strong> <span class="arithmatex">\(\ln|y| = x^3 + C\)</span>.</li>
-<li><strong>Result:</strong>
-    $$
-    y = Ce^{x^3}
-    $$</li>
+<li>
+<p><strong>Result:</strong></p>
+<div class="arithmatex">\[
+y = Ce^{x^3}
+\]</div>
+</li>
 </ul>
 <p><strong>Problem 2: Second-Order</strong>
 Solve <span class="arithmatex">\(y'' - 2y' - 8y = 0\)</span>.</p>
 <ul>
 <li><strong>Characteristic Eq:</strong> <span class="arithmatex">\(r^2 - 2r - 8 = 0\)</span>.</li>
 <li><strong>Factor:</strong> <span class="arithmatex">\((r-4)(r+2) = 0 \implies r=4, \ r=-2\)</span>.</li>
-<li><strong>Result:</strong>
-    $$
-    y = C_1e^{4x} + C_2e^{-2x}
-    $$</li>
+<li>
+<p><strong>Result:</strong></p>
+<div class="arithmatex">\[
+y = C_1e^{4x} + C_2e^{-2x}
+\]</div>
+</li>
 </ul>
 <hr />
 <h2 id="course-summary">Course Summary</h2>
