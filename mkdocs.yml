@@ -20,3 +20,4 @@ nav:
   - Algebra: algebra.md
   - Calculus: calculus.md
   - Geometry: geometry.md
+  - Interactive Calculator: https://daniel-derivative-calculator.streamlit.app/
