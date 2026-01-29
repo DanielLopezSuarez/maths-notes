@@ -35,16 +35,23 @@ To find your position ($x$), you must find the function whose derivative is $v$.
 **Exercise:** Solve $y' = 2x$. Then find the particular solution for $y(0) = 5$.
 
 1.  **Integrate:**
+
     $$
     \int y' \, dx = \int 2x \, dx
     $$
+
 2.  **General Solution:**
+
     $$
     y = x^2 + C
     $$
-3.  **Apply Condition:** Plug in $x=0$ and $y=5$.
+
+3.  **Apply Condition:**
+    Plug in $x=0$ and $y=5$.
     $5 = (0)^2 + C \implies C = 5$.
+
 4.  **Particular Solution:**
+
     $$
     y = x^2 + 5
     $$
@@ -68,37 +75,54 @@ Method used when you can group all $y$'s on one side and all $x$'s on the other.
 **Example:** Solve $y' = y \cdot x$.
 
 1.  **Rewrite:**
+
     $$
     \frac{dy}{dx} = yx
     $$
+
 2.  **Separate:**
+
     $$
     \frac{1}{y} dy = x \, dx
     $$
+
 3.  **Integrate:**
+
     $$
     \ln|y| = \frac{1}{2}x^2 + C
     $$
+
 4.  **Solve for y:**
+
     $$
     y = e^{\frac{1}{2}x^2 + C} = e^C \cdot e^{\frac{1}{2}x^2}
     $$
+
     *(We rename $e^C$ as a new constant $A$)*.
-    **Result:** $y = A e^{\frac{1}{2}x^2}$.
+    **Result:**
+
+    $$
+    y = A e^{\frac{1}{2}x^2}
+    $$
 
 ### Step 2: Interactive Task (Radioactive Decay)
 
 **Exercise:** Solve $y' = -2y$.
 
 1.  **Separate:**
+
     $$
     \frac{dy}{y} = -2 \, dx
     $$
+
 2.  **Integrate:**
+
     $$
     \ln|y| = -2x + C
     $$
+
 3.  **Exponentiate:**
+
     $$
     y = Ce^{-2x}
     $$
@@ -110,19 +134,29 @@ Method used when you can group all $y$'s on one side and all $x$'s on the other.
 **Exercise:** Find the general solution for $y' = \frac{x}{y}$.
 
 1.  **Separate:**
+
     $$
     y \, dy = x \, dx
     $$
+
 2.  **Integrate:**
+
     $$
     \frac{1}{2}y^2 = \frac{1}{2}x^2 + C
     $$
+
 3.  **Simplify:**
+
     $$
     y^2 = x^2 + 2C
     $$
+
     *(Let $2C = K$)*.
-    **Result:** $y = \sqrt{x^2 + K}$.
+    **Result:**
+
+    $$
+    y = \sqrt{x^2 + K}
+    $$
 
 ---
 
@@ -141,14 +175,19 @@ $$
 The solution depends on the roots of the quadratic ($r$):
 
 * **Two Real Roots ($r_1, r_2$):**
+
     $$
     y = C_1e^{r_1x} + C_2e^{r_2x}
     $$
+
 * **One Repeated Root ($r$):**
+
     $$
     y = C_1e^{rx} + C_2xe^{rx}
     $$
+
 * **Complex Roots ($\alpha \pm \beta i$):**
+
     $$
     y = e^{\alpha x}(C_1 \cos(\beta x) + C_2 \sin(\beta x))
     $$
@@ -158,12 +197,16 @@ The solution depends on the roots of the quadratic ($r$):
 **Exercise:** Solve $y'' + 5y' + 4y = 0$.
 
 1.  **Characteristic Equation:**
+
     $$
     r^2 + 5r + 4 = 0
     $$
+
 2.  **Factor:**
     $(r+4)(r+1) = 0 \implies r = -4, \ r = -1$.
+
 3.  **General Solution:**
+
     $$
     y = C_1e^{-4x} + C_2e^{-x}
     $$
@@ -173,12 +216,16 @@ The solution depends on the roots of the quadratic ($r$):
 **Exercise:** Solve $y'' - 6y' + 9y = 0$.
 
 1.  **Characteristic Equation:**
+
     $$
     r^2 - 6r + 9 = 0
     $$
+
 2.  **Factor:**
     $(r-3)^2 = 0 \implies r = 3$ (Repeated).
+
 3.  **General Solution:**
+
     $$
     y = C_1e^{3x} + C_2xe^{3x}
     $$
@@ -201,9 +248,11 @@ $$
 $$
 
 **Solution:**
+
 $$
 P(t) = P_0e^{kt}
 $$
+
 This is **Exponential Growth**.
 
 ---
@@ -216,6 +265,7 @@ Solve $y' = 3x^2y$.
 * **Separate:** $\frac{dy}{y} = 3x^2 dx$.
 * **Integrate:** $\ln|y| = x^3 + C$.
 * **Result:**
+
     $$
     y = Ce^{x^3}
     $$
@@ -226,6 +276,7 @@ Solve $y'' - 2y' - 8y = 0$.
 * **Characteristic Eq:** $r^2 - 2r - 8 = 0$.
 * **Factor:** $(r-4)(r+2) = 0 \implies r=4, \ r=-2$.
 * **Result:**
+
     $$
     y = C_1e^{4x} + C_2e^{-2x}
     $$

@@ -102,9 +102,10 @@ Vectors: $\vec{a}=[2, 2, 0]$, $\vec{b}=[0, 3, 0]$.
 * **Calculation:** $\vec{a} \cdot \vec{b} = 6$.
 * **Lengths:** $\|\vec{a}\| = \sqrt{8}$, $\|\vec{b}\| = 3$.
 * **Result:**
-  $$
-  \cos \theta = \frac{6}{3\sqrt{8}} = \frac{1}{\sqrt{2}} \implies \theta = 45^\circ
-  $$
+
+$$
+\cos \theta = \frac{6}{3\sqrt{8}} = \frac{1}{\sqrt{2}} \implies \theta = 45^\circ
+$$
 
 **Task 2: Perpendicular Vector (Cross Product)**
 Vectors: $\vec{u}=[1, 0, 0]$, $\vec{v}=[1, 1, 0]$.
@@ -120,13 +121,17 @@ Vectors: $\vec{a}=[1, 0, 0]$, $\vec{b}=[0, 1, 0]$, $\vec{c}=[1, 1, 1]$.
 ## Applications
 
 * **Physics (Torque):** Torque is a cross product:
-  $$
-  \tau = \vec{r} \times \vec{F}
-  $$
+
+$$
+\tau = \vec{r} \times \vec{F}
+$$
+
 * **Physics (Work):** Work is a dot product:
-  $$
-  W = \vec{F} \cdot \vec{d}
-  $$
+
+$$
+W = \vec{F} \cdot \vec{d}
+$$
+
 * **Computer Graphics (Lighting):** The brightness of a pixel is calculated using the **Dot Product** between the light ray vector and the surface normal vector.
 
 **Next Step:** Lines and Planes in 3D Space.
