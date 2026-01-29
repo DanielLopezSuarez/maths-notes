@@ -29,23 +29,31 @@ A non-square matrix (e.g., $3 \times 2$) changes dimensions ($2D \to 3D$). You c
 ### Step 2: Visual Example
 
 Consider matrix $A$:
+
 $$
 A = \begin{bmatrix} 3 & 1 \\ 4 & 2 \end{bmatrix}
 $$
+
 * **Column Vectors:** $v_1 = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$ and $v_2 = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$.
 * **Geometric Shape:** These vectors form a parallelogram with vertices at $(0,0), (3,4), (1,2)$, and $(4,6)$.
 * **Determinant Calculation:**
-    $$det(A) = (3 \times 2) - (1 \times 4) = 6 - 4 = 2$$
+
+$$
+det(A) = (3 \times 2) - (1 \times 4) = 6 - 4 = 2
+$$
+
 * **Conclusion:** The area of that parallelogram is exactly **2**.
 
 ### Step 3: Mini-quiz
 
 1.  **Geometric Concept:** If a $3 \times 3$ matrix has a determinant of 0, what does this imply?
-    * *Answer:* The three vectors are linearly dependent (they lie on the same plane or line), so the "volume" they form is 0.
+    * **Answer:** The three vectors are linearly dependent (they lie on the same plane or line), so the "volume" they form is 0.
+
 2.  **True/False:** The determinant can be computed for any $m \times n$ matrix.
-    * *Answer:* **False**. Only for square matrices ($n \times n$).
+    * **Answer:** False. Only for square matrices ($n \times n$).
+
 3.  **Analysis:** A matrix $B$ has $det(B) = -5$. What does this mean?
-    * *Answer:* It scales the area/volume by a factor of 5, and it reverses orientation (flips the space).
+    * **Answer:** It scales the area/volume by a factor of 5, and it reverses orientation (flips the space).
 
 ---
 
@@ -54,12 +62,16 @@ $$
 ### Step 1: The 2x2 Formula
 
 For a matrix $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$:
+
 $$
 det(A) = ad - bc
 $$
 
 **Example:**
-$$A = \begin{bmatrix} 5 & 3 \\ 2 & 4 \end{bmatrix} \implies det(A) = (5 \times 4) - (3 \times 2) = 20 - 6 = 14$$
+
+$$
+A = \begin{bmatrix} 5 & 3 \\ 2 & 4 \end{bmatrix} \implies det(A) = (5 \times 4) - (3 \times 2) = 20 - 6 = 14
+$$
 
 ### Step 2: The 3x3 Shortcut (Sarrus)
 
@@ -69,9 +81,15 @@ For a matrix $A$:
 3.  Subtract the products of the 3 diagonals from top-right to bottom-left (Negative).
 
 **Calculation Example:**
-Let $B = \begin{bmatrix} 2 & 1 & 3 \\ -1 & 0 & 4 \\ 1 & 5 & -2 \end{bmatrix}$.
+
+Let $B$:
+
+$$
+B = \begin{bmatrix} 2 & 1 & 3 \\ -1 & 0 & 4 \\ 1 & 5 & -2 \end{bmatrix}
+$$
 
 **Append Columns:**
+
 $$
 \begin{array}{ccc|cc}
 2 & 1 & 3 & 2 & 1 \\
@@ -80,24 +98,31 @@ $$
 \end{array}
 $$
 
-**1. Positive Diagonals:**
-* $(2 \cdot 0 \cdot -2) = 0$
-* $(1 \cdot 4 \cdot 1) = 4$
-* $(3 \cdot -1 \cdot 5) = -15$
-* **Sum 1:** $0 + 4 - 15 = \mathbf{-11}$
+1.  **Positive Diagonals:**
+    * $(2 \cdot 0 \cdot -2) = 0$
+    * $(1 \cdot 4 \cdot 1) = 4$
+    * $(3 \cdot -1 \cdot 5) = -15$
+    * **Sum 1:** $0 + 4 - 15 = \mathbf{-11}$
 
-**2. Negative Diagonals:**
-* $(3 \cdot 0 \cdot 1) = 0$
-* $(2 \cdot 4 \cdot 5) = 40$
-* $(1 \cdot -1 \cdot -2) = 2$
-* **Sum 2:** $0 + 40 + 2 = \mathbf{42}$
+2.  **Negative Diagonals:**
+    * $(3 \cdot 0 \cdot 1) = 0$
+    * $(2 \cdot 4 \cdot 5) = 40$
+    * $(1 \cdot -1 \cdot -2) = 2$
+    * **Sum 2:** $0 + 40 + 2 = \mathbf{42}$
 
-**3. Final Determinant:**
-$$det(B) = (-11) - (42) = -53$$
+3.  **Final Determinant:**
+
+$$
+det(B) = (-11) - (42) = -53
+$$
 
 ### Step 3: Practice
 
-Calculate $det(D)$ for $D = \begin{bmatrix} 1 & 0 & 4 \\ 2 & 1 & 1 \\ 3 & -1 & 2 \end{bmatrix}$.
+Calculate $det(D)$ for:
+
+$$
+D = \begin{bmatrix} 1 & 0 & 4 \\ 2 & 1 & 1 \\ 3 & -1 & 2 \end{bmatrix}
+$$
 
 * **Positives:** $(1 \cdot 1 \cdot 2) + (0 \cdot 1 \cdot 3) + (4 \cdot 2 \cdot -1) = 2 + 0 - 8 = -6$
 * **Negatives:** $(4 \cdot 1 \cdot 3) + (1 \cdot 1 \cdot -1) + (0 \cdot 2 \cdot 2) = 12 - 1 + 0 = 11$
@@ -111,13 +136,20 @@ Calculate $det(D)$ for $D = \begin{bmatrix} 1 & 0 & 4 \\ 2 & 1 & 1 \\ 3 & -1 & 2
 
 * **Minor ($M_{ij}$):** Determinant of the smaller matrix obtained by deleting row $i$ and column $j$.
 * **Cofactor ($A_{ij}$):** The signed minor. Formula: $A_{ij} = (-1)^{i+j} M_{ij}$.
-    * *Sign Checkerboard:* $\begin{bmatrix} + & - & + \\ - & + & - \\ + & - & + \end{bmatrix}$
+
+**Sign Checkerboard:**
+
+$$
+\begin{bmatrix} + & - & + \\ - & + & - \\ + & - & + \end{bmatrix}
+$$
 
 ### Step 2: The Method
 
 Select **one row or column** (ideally the one with the most zeros). Multiply each element by its cofactor and sum them up.
 
-$$det(A) = a_{i1}A_{i1} + a_{i2}A_{i2} + \dots + a_{in}A_{in}$$
+$$
+det(A) = a_{i1}A_{i1} + a_{i2}A_{i2} + \dots + a_{in}A_{in}
+$$
 
 ### Step 3: 4x4 Example
 
@@ -131,11 +163,20 @@ Formula: $det(C) = 0 \cdot A_{13} + 1 \cdot A_{23} + 0 \cdot A_{33} + 5 \cdot A_
 Zeros cancel terms, so we just need: **$1 \cdot A_{23} + 5 \cdot A_{43}$**.
 
 1.  **Find $A_{23}$:** Position (2,3) is odd ($2+3=5 \to$ Negative).
-    * $M_{23} = det \begin{pmatrix} 1 & 4 & 2 \\ 0 & 1 & -1 \\ 3 & 0 & 1 \end{pmatrix} = -17$
-    * $A_{23} = -(-17) = \mathbf{17}$
+
+    $$
+    M_{23} = det \begin{bmatrix} 1 & 4 & 2 \\ 0 & 1 & -1 \\ 3 & 0 & 1 \end{bmatrix} = -17
+    $$
+
+    $A_{23} = -(-17) = \mathbf{17}$
+
 2.  **Find $A_{43}$:** Position (4,3) is odd ($4+3=7 \to$ Negative).
-    * $M_{43} = det \begin{pmatrix} 1 & 4 & 2 \\ -1 & 2 & 3 \\ 0 & 1 & -1 \end{pmatrix} = -11$
-    * $A_{43} = -(-11) = \mathbf{11}$
+
+    $$
+    M_{43} = det \begin{bmatrix} 1 & 4 & 2 \\ -1 & 2 & 3 \\ 0 & 1 & -1 \end{bmatrix} = -11
+    $$
+
+    $A_{43} = -(-11) = \mathbf{11}$
 
 **Final Result:** $1(17) + 5(11) = 17 + 55 = \mathbf{72}$.
 
@@ -155,16 +196,28 @@ Transform the matrix into an **Upper Triangular Form** (zeros below diagonal) us
 ### Step 2: Example Calculation
 
 Compute $det(A)$:
+
 $$
 A = \begin{bmatrix} 1 & 2 & 0 & 1 \\ 2 & 5 & 1 & 3 \\ -1 & 1 & 2 & 1 \\ 0 & 2 & 1 & 1 \end{bmatrix}
 $$
 
 1.  **Clear Col 1:** $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 + R_1$.
-    $$\begin{pmatrix} 1 & 2 & 0 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 3 & 2 & 2 \\ 0 & 2 & 1 & 1 \end{pmatrix}$$
+
+    $$
+    \begin{bmatrix} 1 & 2 & 0 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 3 & 2 & 2 \\ 0 & 2 & 1 & 1 \end{bmatrix}
+    $$
+
 2.  **Clear Col 2:** $R_3 \to R_3 - 3R_2$ and $R_4 \to R_4 - 2R_2$.
-    $$\begin{pmatrix} 1 & 2 & 0 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & -1 & -1 \\ 0 & 0 & -1 & -1 \end{pmatrix}$$
+
+    $$
+    \begin{bmatrix} 1 & 2 & 0 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & -1 & -1 \\ 0 & 0 & -1 & -1 \end{bmatrix}
+    $$
+
 3.  **Clear Col 3:** $R_4 \to R_4 - R_3$.
-    $$\begin{pmatrix} 1 & 2 & 0 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & -1 & -1 \\ 0 & 0 & 0 & 0 \end{pmatrix}$$
+
+    $$
+    \begin{bmatrix} 1 & 2 & 0 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & -1 & -1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+    $$
 
 **Result:** Diagonal product $\rightarrow 1 \times 1 \times (-1) \times 0 = \mathbf{0}$.
 
@@ -173,17 +226,37 @@ $$
 ## Topic 5: Applications & Review
 
 ### Cramer's Rule (Solving Systems)
-Used to solve $Ax = b$. Each variable is a ratio of determinants: $x_i = \frac{det(A_i)}{det(A)}$.
+
+Used to solve $Ax = b$. Each variable is a ratio of determinants:
+
+$$
+x_i = \frac{det(A_i)}{det(A)}
+$$
 
 **Example System:**
 $3x + y = 9$
 $2x + 4y = 8$
 
-1.  **$det(A)$:** $\begin{vmatrix} 3 & 1 \\ 2 & 4 \end{vmatrix} = 10$.
-2.  **$det(A_x)$** (Replace col 1 with constants): $\begin{vmatrix} 9 & 1 \\ 8 & 4 \end{vmatrix} = 28 \implies x = 28/10 = \mathbf{2.8}$.
-3.  **$det(A_y)$** (Replace col 2 with constants): $\begin{vmatrix} 3 & 9 \\ 2 & 8 \end{vmatrix} = 6 \implies y = 6/10 = \mathbf{0.6}$.
+1.  **$det(A)$:**
+
+    $$
+    \begin{vmatrix} 3 & 1 \\ 2 & 4 \end{vmatrix} = 10
+    $$
+
+2.  **$det(A_x)$** (Replace col 1 with constants):
+
+    $$
+    \begin{vmatrix} 9 & 1 \\ 8 & 4 \end{vmatrix} = 28 \implies x = 28/10 = \mathbf{2.8}
+    $$
+
+3.  **$det(A_y)$** (Replace col 2 with constants):
+
+    $$
+    \begin{vmatrix} 3 & 9 \\ 2 & 8 \end{vmatrix} = 6 \implies y = 6/10 = \mathbf{0.6}
+    $$
 
 ### Python Implementation
+
 How to compute a determinant in Python using NumPy:
 
 ```python
