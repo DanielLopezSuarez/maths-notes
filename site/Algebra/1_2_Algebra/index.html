@@ -1317,68 +1317,102 @@ A non-square matrix (e.g., <span class="arithmatex">\(3 \times 2\)</span>) chang
 * <strong>Negative (<span class="arithmatex">\(det &lt; 0\)</span>):</strong> Reverses orientation (flips space like a mirror).
 * <strong>Zero (<span class="arithmatex">\(det = 0\)</span>):</strong> The transformation flattens space into a lower dimension (e.g., 3D <span class="arithmatex">\(\to\)</span> 2D plane). The matrix is <strong>singular</strong> (non-invertible).</p>
 <h3 id="step-2-visual-example">Step 2: Visual Example</h3>
-<p>Consider matrix <span class="arithmatex">\(A\)</span>:
-$$
-A = \begin{bmatrix} 3 &amp; 1 \ 4 &amp; 2 \end{bmatrix}
-$$
-* <strong>Column Vectors:</strong> <span class="arithmatex">\(v_1 = \begin{bmatrix} 3 \\ 4 \end{bmatrix}\)</span> and <span class="arithmatex">\(v_2 = \begin{bmatrix} 1 \\ 2 \end{bmatrix}\)</span>.
-* <strong>Geometric Shape:</strong> These vectors form a parallelogram with vertices at <span class="arithmatex">\((0,0), (3,4), (1,2)\)</span>, and <span class="arithmatex">\((4,6)\)</span>.
-* <strong>Determinant Calculation:</strong>
-    $<span class="arithmatex">\(det(A) = (3 \times 2) - (1 \times 4) = 6 - 4 = 2\)</span>$
-* <strong>Conclusion:</strong> The area of that parallelogram is exactly <strong>2</strong>.</p>
+<p>Consider matrix <span class="arithmatex">\(A\)</span>:</p>
+<div class="arithmatex">\[
+A = \begin{bmatrix} 3 &amp; 1 \\ 4 &amp; 2 \end{bmatrix}
+\]</div>
+<ul>
+<li><strong>Column Vectors:</strong> <span class="arithmatex">\(v_1 = \begin{bmatrix} 3 \\ 4 \end{bmatrix}\)</span> and <span class="arithmatex">\(v_2 = \begin{bmatrix} 1 \\ 2 \end{bmatrix}\)</span>.</li>
+<li><strong>Geometric Shape:</strong> These vectors form a parallelogram with vertices at <span class="arithmatex">\((0,0), (3,4), (1,2)\)</span>, and <span class="arithmatex">\((4,6)\)</span>.</li>
+<li><strong>Determinant Calculation:</strong></li>
+</ul>
+<div class="arithmatex">\[
+det(A) = (3 \times 2) - (1 \times 4) = 6 - 4 = 2
+\]</div>
+<ul>
+<li><strong>Conclusion:</strong> The area of that parallelogram is exactly <strong>2</strong>.</li>
+</ul>
 <h3 id="step-3-mini-quiz">Step 3: Mini-quiz</h3>
 <ol>
-<li><strong>Geometric Concept:</strong> If a <span class="arithmatex">\(3 \times 3\)</span> matrix has a determinant of 0, what does this imply?<ul>
-<li><em>Answer:</em> The three vectors are linearly dependent (they lie on the same plane or line), so the "volume" they form is 0.</li>
+<li>
+<p><strong>Geometric Concept:</strong> If a <span class="arithmatex">\(3 \times 3\)</span> matrix has a determinant of 0, what does this imply?</p>
+<ul>
+<li><strong>Answer:</strong> The three vectors are linearly dependent (they lie on the same plane or line), so the "volume" they form is 0.</li>
 </ul>
 </li>
-<li><strong>True/False:</strong> The determinant can be computed for any <span class="arithmatex">\(m \times n\)</span> matrix.<ul>
-<li><em>Answer:</em> <strong>False</strong>. Only for square matrices (<span class="arithmatex">\(n \times n\)</span>).</li>
+<li>
+<p><strong>True/False:</strong> The determinant can be computed for any <span class="arithmatex">\(m \times n\)</span> matrix.</p>
+<ul>
+<li><strong>Answer:</strong> False. Only for square matrices (<span class="arithmatex">\(n \times n\)</span>).</li>
 </ul>
 </li>
-<li><strong>Analysis:</strong> A matrix <span class="arithmatex">\(B\)</span> has <span class="arithmatex">\(det(B) = -5\)</span>. What does this mean?<ul>
-<li><em>Answer:</em> It scales the area/volume by a factor of 5, and it reverses orientation (flips the space).</li>
+<li>
+<p><strong>Analysis:</strong> A matrix <span class="arithmatex">\(B\)</span> has <span class="arithmatex">\(det(B) = -5\)</span>. What does this mean?</p>
+<ul>
+<li><strong>Answer:</strong> It scales the area/volume by a factor of 5, and it reverses orientation (flips the space).</li>
 </ul>
 </li>
 </ol>
 <hr />
 <h2 id="topic-2-sarrus-rule-2x2-and-3x3">Topic 2: Sarrus’ Rule (2x2 and 3x3)</h2>
 <h3 id="step-1-the-2x2-formula">Step 1: The 2x2 Formula</h3>
-<p>For a matrix <span class="arithmatex">\(A = \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\)</span>:
-$$
+<p>For a matrix <span class="arithmatex">\(A = \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\)</span>:</p>
+<div class="arithmatex">\[
 det(A) = ad - bc
-$$</p>
-<p><strong>Example:</strong>
-$<span class="arithmatex">\(A = \begin{bmatrix} 5 &amp; 3 \\ 2 &amp; 4 \end{bmatrix} \implies det(A) = (5 \times 4) - (3 \times 2) = 20 - 6 = 14\)</span>$</p>
+\]</div>
+<p><strong>Example:</strong></p>
+<div class="arithmatex">\[
+A = \begin{bmatrix} 5 &amp; 3 \\ 2 &amp; 4 \end{bmatrix} \implies det(A) = (5 \times 4) - (3 \times 2) = 20 - 6 = 14
+\]</div>
 <h3 id="step-2-the-3x3-shortcut-sarrus">Step 2: The 3x3 Shortcut (Sarrus)</h3>
 <p>For a matrix <span class="arithmatex">\(A\)</span>:
 1.  Append the first two columns to the right of the matrix.
 2.  Sum the products of the 3 diagonals from top-left to bottom-right (Positive).
 3.  Subtract the products of the 3 diagonals from top-right to bottom-left (Negative).</p>
-<p><strong>Calculation Example:</strong>
-Let <span class="arithmatex">\(B = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ -1 &amp; 0 &amp; 4 \\ 1 &amp; 5 &amp; -2 \end{bmatrix}\)</span>.</p>
-<p><strong>Append Columns:</strong>
-$$
+<p><strong>Calculation Example:</strong></p>
+<p>Let <span class="arithmatex">\(B\)</span>:</p>
+<div class="arithmatex">\[
+B = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ -1 &amp; 0 &amp; 4 \\ 1 &amp; 5 &amp; -2 \end{bmatrix}
+\]</div>
+<p><strong>Append Columns:</strong></p>
+<div class="arithmatex">\[
 \begin{array}{ccc|cc}
-2 &amp; 1 &amp; 3 &amp; 2 &amp; 1 \
--1 &amp; 0 &amp; 4 &amp; -1 &amp; 0 \
+2 &amp; 1 &amp; 3 &amp; 2 &amp; 1 \\
+-1 &amp; 0 &amp; 4 &amp; -1 &amp; 0 \\
 1 &amp; 5 &amp; -2 &amp; 1 &amp; 5
 \end{array}
-$$</p>
-<p><strong>1. Positive Diagonals:</strong>
-* <span class="arithmatex">\((2 \cdot 0 \cdot -2) = 0\)</span>
-* <span class="arithmatex">\((1 \cdot 4 \cdot 1) = 4\)</span>
-* <span class="arithmatex">\((3 \cdot -1 \cdot 5) = -15\)</span>
-* <strong>Sum 1:</strong> <span class="arithmatex">\(0 + 4 - 15 = \mathbf{-11}\)</span></p>
-<p><strong>2. Negative Diagonals:</strong>
-* <span class="arithmatex">\((3 \cdot 0 \cdot 1) = 0\)</span>
-* <span class="arithmatex">\((2 \cdot 4 \cdot 5) = 40\)</span>
-* <span class="arithmatex">\((1 \cdot -1 \cdot -2) = 2\)</span>
-* <strong>Sum 2:</strong> <span class="arithmatex">\(0 + 40 + 2 = \mathbf{42}\)</span></p>
-<p><strong>3. Final Determinant:</strong>
-$<span class="arithmatex">\(det(B) = (-11) - (42) = -53\)</span>$</p>
+\]</div>
+<ol>
+<li>
+<p><strong>Positive Diagonals:</strong></p>
+<ul>
+<li><span class="arithmatex">\((2 \cdot 0 \cdot -2) = 0\)</span></li>
+<li><span class="arithmatex">\((1 \cdot 4 \cdot 1) = 4\)</span></li>
+<li><span class="arithmatex">\((3 \cdot -1 \cdot 5) = -15\)</span></li>
+<li><strong>Sum 1:</strong> <span class="arithmatex">\(0 + 4 - 15 = \mathbf{-11}\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Negative Diagonals:</strong></p>
+<ul>
+<li><span class="arithmatex">\((3 \cdot 0 \cdot 1) = 0\)</span></li>
+<li><span class="arithmatex">\((2 \cdot 4 \cdot 5) = 40\)</span></li>
+<li><span class="arithmatex">\((1 \cdot -1 \cdot -2) = 2\)</span></li>
+<li><strong>Sum 2:</strong> <span class="arithmatex">\(0 + 40 + 2 = \mathbf{42}\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Final Determinant:</strong></p>
+</li>
+</ol>
+<div class="arithmatex">\[
+det(B) = (-11) - (42) = -53
+\]</div>
 <h3 id="step-3-practice">Step 3: Practice</h3>
-<p>Calculate <span class="arithmatex">\(det(D)\)</span> for <span class="arithmatex">\(D = \begin{bmatrix} 1 &amp; 0 &amp; 4 \\ 2 &amp; 1 &amp; 1 \\ 3 &amp; -1 &amp; 2 \end{bmatrix}\)</span>.</p>
+<p>Calculate <span class="arithmatex">\(det(D)\)</span> for:</p>
+<div class="arithmatex">\[
+D = \begin{bmatrix} 1 &amp; 0 &amp; 4 \\ 2 &amp; 1 &amp; 1 \\ 3 &amp; -1 &amp; 2 \end{bmatrix}
+\]</div>
 <ul>
 <li><strong>Positives:</strong> <span class="arithmatex">\((1 \cdot 1 \cdot 2) + (0 \cdot 1 \cdot 3) + (4 \cdot 2 \cdot -1) = 2 + 0 - 8 = -6\)</span></li>
 <li><strong>Negatives:</strong> <span class="arithmatex">\((4 \cdot 1 \cdot 3) + (1 \cdot 1 \cdot -1) + (0 \cdot 2 \cdot 2) = 12 - 1 + 0 = 11\)</span></li>
@@ -1389,14 +1423,17 @@ $<span class="arithmatex">\(det(B) = (-11) - (42) = -53\)</span>$</p>
 <h3 id="step-1-minors-and-cofactors">Step 1: Minors and Cofactors</h3>
 <ul>
 <li><strong>Minor (<span class="arithmatex">\(M_{ij}\)</span>):</strong> Determinant of the smaller matrix obtained by deleting row <span class="arithmatex">\(i\)</span> and column <span class="arithmatex">\(j\)</span>.</li>
-<li><strong>Cofactor (<span class="arithmatex">\(A_{ij}\)</span>):</strong> The signed minor. Formula: <span class="arithmatex">\(A_{ij} = (-1)^{i+j} M_{ij}\)</span>.<ul>
-<li><em>Sign Checkerboard:</em> <span class="arithmatex">\(\begin{bmatrix} + &amp; - &amp; + \\ - &amp; + &amp; - \\ + &amp; - &amp; + \end{bmatrix}\)</span></li>
+<li><strong>Cofactor (<span class="arithmatex">\(A_{ij}\)</span>):</strong> The signed minor. Formula: <span class="arithmatex">\(A_{ij} = (-1)^{i+j} M_{ij}\)</span>.</li>
 </ul>
-</li>
-</ul>
+<p><strong>Sign Checkerboard:</strong></p>
+<div class="arithmatex">\[
+\begin{bmatrix} + &amp; - &amp; + \\ - &amp; + &amp; - \\ + &amp; - &amp; + \end{bmatrix}
+\]</div>
 <h3 id="step-2-the-method">Step 2: The Method</h3>
 <p>Select <strong>one row or column</strong> (ideally the one with the most zeros). Multiply each element by its cofactor and sum them up.</p>
-<div class="arithmatex">\[det(A) = a_{i1}A_{i1} + a_{i2}A_{i2} + \dots + a_{in}A_{in}\]</div>
+<div class="arithmatex">\[
+det(A) = a_{i1}A_{i1} + a_{i2}A_{i2} + \dots + a_{in}A_{in}
+\]</div>
 <h3 id="step-3-4x4-example">Step 3: 4x4 Example</h3>
 <p>Compute the determinant of <span class="arithmatex">\(C\)</span> expanding along <strong>Column 3</strong> (because it has two zeros):</p>
 <div class="arithmatex">\[
@@ -1405,15 +1442,19 @@ C = \begin{bmatrix} 1 &amp; 4 &amp; \mathbf{0} &amp; 2 \\ -1 &amp; 2 &amp; \math
 <p>Formula: <span class="arithmatex">\(det(C) = 0 \cdot A_{13} + 1 \cdot A_{23} + 0 \cdot A_{33} + 5 \cdot A_{43}\)</span>.
 Zeros cancel terms, so we just need: <strong><span class="arithmatex">\(1 \cdot A_{23} + 5 \cdot A_{43}\)</span></strong>.</p>
 <ol>
-<li><strong>Find <span class="arithmatex">\(A_{23}\)</span>:</strong> Position (2,3) is odd (<span class="arithmatex">\(2+3=5 \to\)</span> Negative).<ul>
-<li><span class="arithmatex">\(M_{23} = det \begin{pmatrix} 1 &amp; 4 &amp; 2 \\ 0 &amp; 1 &amp; -1 \\ 3 &amp; 0 &amp; 1 \end{pmatrix} = -17\)</span></li>
-<li><span class="arithmatex">\(A_{23} = -(-17) = \mathbf{17}\)</span></li>
-</ul>
+<li>
+<p><strong>Find <span class="arithmatex">\(A_{23}\)</span>:</strong> Position (2,3) is odd (<span class="arithmatex">\(2+3=5 \to\)</span> Negative).</p>
+<div class="arithmatex">\[
+M_{23} = det \begin{bmatrix} 1 &amp; 4 &amp; 2 \\ 0 &amp; 1 &amp; -1 \\ 3 &amp; 0 &amp; 1 \end{bmatrix} = -17
+\]</div>
+<p><span class="arithmatex">\(A_{23} = -(-17) = \mathbf{17}\)</span></p>
 </li>
-<li><strong>Find <span class="arithmatex">\(A_{43}\)</span>:</strong> Position (4,3) is odd (<span class="arithmatex">\(4+3=7 \to\)</span> Negative).<ul>
-<li><span class="arithmatex">\(M_{43} = det \begin{pmatrix} 1 &amp; 4 &amp; 2 \\ -1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; -1 \end{pmatrix} = -11\)</span></li>
-<li><span class="arithmatex">\(A_{43} = -(-11) = \mathbf{11}\)</span></li>
-</ul>
+<li>
+<p><strong>Find <span class="arithmatex">\(A_{43}\)</span>:</strong> Position (4,3) is odd (<span class="arithmatex">\(4+3=7 \to\)</span> Negative).</p>
+<div class="arithmatex">\[
+M_{43} = det \begin{bmatrix} 1 &amp; 4 &amp; 2 \\ -1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; -1 \end{bmatrix} = -11
+\]</div>
+<p><span class="arithmatex">\(A_{43} = -(-11) = \mathbf{11}\)</span></p>
 </li>
 </ol>
 <p><strong>Final Result:</strong> <span class="arithmatex">\(1(17) + 5(11) = 17 + 55 = \mathbf{72}\)</span>.</p>
@@ -1426,30 +1467,60 @@ Zeros cancel terms, so we just need: <strong><span class="arithmatex">\(1 \cdot 
 2.  <strong>Swap rows:</strong> Determinant is <strong>negated</strong> (<span class="arithmatex">\(\times -1\)</span>).
 3.  <strong>Scale row:</strong> Determinant is multiplied by scalar <span class="arithmatex">\(k\)</span>.</p>
 <h3 id="step-2-example-calculation">Step 2: Example Calculation</h3>
-<p>Compute <span class="arithmatex">\(det(A)\)</span>:
-$$
-A = \begin{bmatrix} 1 &amp; 2 &amp; 0 &amp; 1 \ 2 &amp; 5 &amp; 1 &amp; 3 \ -1 &amp; 1 &amp; 2 &amp; 1 \ 0 &amp; 2 &amp; 1 &amp; 1 \end{bmatrix}
-$$</p>
+<p>Compute <span class="arithmatex">\(det(A)\)</span>:</p>
+<div class="arithmatex">\[
+A = \begin{bmatrix} 1 &amp; 2 &amp; 0 &amp; 1 \\ 2 &amp; 5 &amp; 1 &amp; 3 \\ -1 &amp; 1 &amp; 2 &amp; 1 \\ 0 &amp; 2 &amp; 1 &amp; 1 \end{bmatrix}
+\]</div>
 <ol>
-<li><strong>Clear Col 1:</strong> <span class="arithmatex">\(R_2 \to R_2 - 2R_1\)</span> and <span class="arithmatex">\(R_3 \to R_3 + R_1\)</span>.
-    $<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 2 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 3 &amp; 2 &amp; 2 \\ 0 &amp; 2 &amp; 1 &amp; 1 \end{pmatrix}\)</span>$</li>
-<li><strong>Clear Col 2:</strong> <span class="arithmatex">\(R_3 \to R_3 - 3R_2\)</span> and <span class="arithmatex">\(R_4 \to R_4 - 2R_2\)</span>.
-    $<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 2 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; -1 \\ 0 &amp; 0 &amp; -1 &amp; -1 \end{pmatrix}\)</span>$</li>
-<li><strong>Clear Col 3:</strong> <span class="arithmatex">\(R_4 \to R_4 - R_3\)</span>.
-    $<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 2 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}\)</span>$</li>
+<li>
+<p><strong>Clear Col 1:</strong> <span class="arithmatex">\(R_2 \to R_2 - 2R_1\)</span> and <span class="arithmatex">\(R_3 \to R_3 + R_1\)</span>.</p>
+<div class="arithmatex">\[
+\begin{bmatrix} 1 &amp; 2 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 3 &amp; 2 &amp; 2 \\ 0 &amp; 2 &amp; 1 &amp; 1 \end{bmatrix}
+\]</div>
+</li>
+<li>
+<p><strong>Clear Col 2:</strong> <span class="arithmatex">\(R_3 \to R_3 - 3R_2\)</span> and <span class="arithmatex">\(R_4 \to R_4 - 2R_2\)</span>.</p>
+<div class="arithmatex">\[
+\begin{bmatrix} 1 &amp; 2 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; -1 \\ 0 &amp; 0 &amp; -1 &amp; -1 \end{bmatrix}
+\]</div>
+</li>
+<li>
+<p><strong>Clear Col 3:</strong> <span class="arithmatex">\(R_4 \to R_4 - R_3\)</span>.</p>
+<div class="arithmatex">\[
+\begin{bmatrix} 1 &amp; 2 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{bmatrix}
+\]</div>
+</li>
 </ol>
 <p><strong>Result:</strong> Diagonal product <span class="arithmatex">\(\rightarrow 1 \times 1 \times (-1) \times 0 = \mathbf{0}\)</span>.</p>
 <hr />
 <h2 id="topic-5-applications-review">Topic 5: Applications &amp; Review</h2>
 <h3 id="cramers-rule-solving-systems">Cramer's Rule (Solving Systems)</h3>
-<p>Used to solve <span class="arithmatex">\(Ax = b\)</span>. Each variable is a ratio of determinants: <span class="arithmatex">\(x_i = \frac{det(A_i)}{det(A)}\)</span>.</p>
+<p>Used to solve <span class="arithmatex">\(Ax = b\)</span>. Each variable is a ratio of determinants:</p>
+<div class="arithmatex">\[
+x_i = \frac{det(A_i)}{det(A)}
+\]</div>
 <p><strong>Example System:</strong>
 <span class="arithmatex">\(3x + y = 9\)</span>
 <span class="arithmatex">\(2x + 4y = 8\)</span></p>
 <ol>
-<li><strong><span class="arithmatex">\(det(A)\)</span>:</strong> <span class="arithmatex">\(\begin{vmatrix} 3 &amp; 1 \\ 2 &amp; 4 \end{vmatrix} = 10\)</span>.</li>
-<li><strong><span class="arithmatex">\(det(A_x)\)</span></strong> (Replace col 1 with constants): <span class="arithmatex">\(\begin{vmatrix} 9 &amp; 1 \\ 8 &amp; 4 \end{vmatrix} = 28 \implies x = 28/10 = \mathbf{2.8}\)</span>.</li>
-<li><strong><span class="arithmatex">\(det(A_y)\)</span></strong> (Replace col 2 with constants): <span class="arithmatex">\(\begin{vmatrix} 3 &amp; 9 \\ 2 &amp; 8 \end{vmatrix} = 6 \implies y = 6/10 = \mathbf{0.6}\)</span>.</li>
+<li>
+<p><strong><span class="arithmatex">\(det(A)\)</span>:</strong></p>
+<div class="arithmatex">\[
+\begin{vmatrix} 3 &amp; 1 \\ 2 &amp; 4 \end{vmatrix} = 10
+\]</div>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(det(A_x)\)</span></strong> (Replace col 1 with constants):</p>
+<div class="arithmatex">\[
+\begin{vmatrix} 9 &amp; 1 \\ 8 &amp; 4 \end{vmatrix} = 28 \implies x = 28/10 = \mathbf{2.8}
+\]</div>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(det(A_y)\)</span></strong> (Replace col 2 with constants):</p>
+<div class="arithmatex">\[
+\begin{vmatrix} 3 &amp; 9 \\ 2 &amp; 8 \end{vmatrix} = 6 \implies y = 6/10 = \mathbf{0.6}
+\]</div>
+</li>
 </ol>
 <h3 id="python-implementation">Python Implementation</h3>
 <p>How to compute a determinant in Python using NumPy:</p>
