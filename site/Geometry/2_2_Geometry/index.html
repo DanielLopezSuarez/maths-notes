@@ -1191,15 +1191,17 @@
 <h3 id="step-1-definition">Step 1: Definition</h3>
 <p>The dot product takes two vectors and returns a <strong>scalar</strong> (a single number).</p>
 <ul>
-<li><strong>Algebraic Formula:</strong> Multiply corresponding components and sum them.
-    $$
-    \vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3
-    $$</li>
-<li><strong>Geometric Formula:</strong> Using the angle <span class="arithmatex">\(\theta\)</span> between them.
-    $$
-    \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| \cos(\theta)
-    $$</li>
+<li><strong>Algebraic Formula:</strong> Multiply corresponding components and sum them.</li>
 </ul>
+<div class="arithmatex">\[
+\vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3
+\]</div>
+<ul>
+<li><strong>Geometric Formula:</strong> Using the angle <span class="arithmatex">\(\theta\)</span> between them.</li>
+</ul>
+<div class="arithmatex">\[
+\vec{u} \cdot \vec{v} = \|\vec{u}\| \|\vec{v}\| \cos(\theta)
+\]</div>
 <h3 id="step-2-interpreting-the-result">Step 2: Interpreting the Result</h3>
 <ul>
 <li><strong>Positive:</strong> Acute angle (<span class="arithmatex">\(&lt; 90^\circ\)</span>).</li>
@@ -1209,8 +1211,15 @@
 <h3 id="step-3-calculation-example">Step 3: Calculation Example</h3>
 <p>Find the dot product and angle between <span class="arithmatex">\(\vec{u}=[1, 2, 3]\)</span> and <span class="arithmatex">\(\vec{v}=[-2, 1, 0]\)</span>.</p>
 <ol>
-<li><strong>Dot Product:</strong> <span class="arithmatex">\((1)(-2) + (2)(1) + (3)(0) = -2 + 2 + 0 = \mathbf{0}\)</span>.</li>
-<li><strong>Conclusion:</strong> Since the result is 0, the vectors are <strong>Perpendicular</strong> (<span class="arithmatex">\(\theta = 90^\circ\)</span>).</li>
+<li>
+<p><strong>Dot Product:</strong></p>
+<div class="arithmatex">\[
+(1)(-2) + (2)(1) + (3)(0) = -2 + 2 + 0 = \mathbf{0}
+\]</div>
+</li>
+<li>
+<p><strong>Conclusion:</strong> Since the result is 0, the vectors are <strong>Perpendicular</strong> (<span class="arithmatex">\(\theta = 90^\circ\)</span>).</p>
+</li>
 </ol>
 <hr />
 <h2 id="topic-2-the-cross-product-times">Topic 2: The Cross Product (<span class="arithmatex">\(\times\)</span>)</h2>
@@ -1235,15 +1244,15 @@
 <li><span class="arithmatex">\(\mathbf{j}\)</span>-term: <span class="arithmatex">\(-( (1)(0) - (0)(0) ) = 0\)</span></li>
 <li><span class="arithmatex">\(\mathbf{k}\)</span>-term: <span class="arithmatex">\((1)(1) - (0)(0) = 1\)</span></li>
 </ul>
-<p><strong>Result:</strong> <span class="arithmatex">\([0, 0, 1]\)</span> (Vector pointing straight up the Z-axis).
-<strong>Area:</strong> Magnitude is <span class="arithmatex">\(\sqrt{0+0+1} = 1\)</span>.</p>
+<p><strong>Result:</strong> <span class="arithmatex">\([0, 0, 1]\)</span> (Vector pointing straight up the Z-axis).</p>
+<p><strong>Area:</strong> Magnitude is <span class="arithmatex">\(\sqrt{0+0+1} = 1\)</span>.</p>
 <hr />
 <h2 id="topic-3-the-scalar-triple-product">Topic 3: The Scalar Triple Product</h2>
 <h3 id="step-1-definition_1">Step 1: Definition</h3>
-<p>Combines three vectors (<span class="arithmatex">\(\vec{u}, \vec{v}, \vec{w}\)</span>) to find a scalar.
-$$
-\text{Triple Product} = \vec{u} \cdot (\vec{v} \times \vec{w}) = \det \begin{vmatrix} u_1 &amp; u_2 &amp; u_3 \ v_1 &amp; v_2 &amp; v_3 \ w_1 &amp; w_2 &amp; w_3 \end{vmatrix}
-$$</p>
+<p>Combines three vectors (<span class="arithmatex">\(\vec{u}, \vec{v}, \vec{w}\)</span>) to find a scalar.</p>
+<div class="arithmatex">\[
+\text{Triple Product} = \vec{u} \cdot (\vec{v} \times \vec{w}) = \det \begin{vmatrix} u_1 &amp; u_2 &amp; u_3 \\ v_1 &amp; v_2 &amp; v_3 \\ w_1 &amp; w_2 &amp; w_3 \end{vmatrix}
+\]</div>
 <h3 id="step-2-geometric-meaning-volume">Step 2: Geometric Meaning (Volume)</h3>
 <ul>
 <li>The absolute value of the result is the <strong>Volume</strong> of the parallelepiped (3D box) formed by the three vectors.</li>
@@ -1251,30 +1260,39 @@ $$</p>
 </ul>
 <h3 id="step-3-calculation-example_2">Step 3: Calculation Example</h3>
 <p>Check if <span class="arithmatex">\(\vec{u}=[1, 2, 3]\)</span>, <span class="arithmatex">\(\vec{v}=[4, 5, 6]\)</span>, and <span class="arithmatex">\(\vec{w}=[7, 8, 9]\)</span> are coplanar.</p>
-<p>$$
-\det \begin{vmatrix} 1 &amp; 2 &amp; 3 \ 4 &amp; 5 &amp; 6 \ 7 &amp; 8 &amp; 9 \end{vmatrix} = 0
-$$
-<em>(Calculation: <span class="arithmatex">\(1(45-48) - 2(36-42) + 3(32-35) = -3 + 12 - 9 = 0\)</span>)</em></p>
+<div class="arithmatex">\[
+\det \begin{vmatrix} 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \end{vmatrix} = 0
+\]</div>
+<p><em>(Calculation: <span class="arithmatex">\(1(45-48) - 2(36-42) + 3(32-35) = -3 + 12 - 9 = 0\)</span>)</em></p>
 <p><strong>Conclusion:</strong> The result is 0, so they are <strong>Coplanar</strong>.</p>
 <hr />
 <h2 id="finale-comprehensive-test">Finale: Comprehensive Test</h2>
 <p><strong>Task 1: Angle (Dot Product)</strong>
 Vectors: <span class="arithmatex">\(\vec{a}=[2, 2, 0]\)</span>, <span class="arithmatex">\(\vec{b}=[0, 3, 0]\)</span>.
-* <span class="arithmatex">\(\vec{a} \cdot \vec{b} = 6\)</span>.
-* Lengths: <span class="arithmatex">\(\|\vec{a}\| = \sqrt{8}\)</span>, <span class="arithmatex">\(\|\vec{b}\| = 3\)</span>.
-* <span class="arithmatex">\(\cos \theta = \frac{6}{3\sqrt{8}} = \frac{1}{\sqrt{2}} \implies \theta = 45^\circ\)</span>.</p>
+* <strong>Calculation:</strong> <span class="arithmatex">\(\vec{a} \cdot \vec{b} = 6\)</span>.
+* <strong>Lengths:</strong> <span class="arithmatex">\(\|\vec{a}\| = \sqrt{8}\)</span>, <span class="arithmatex">\(\|\vec{b}\| = 3\)</span>.
+* <strong>Result:</strong>
+  $$
+  \cos \theta = \frac{6}{3\sqrt{8}} = \frac{1}{\sqrt{2}} \implies \theta = 45^\circ
+  $$</p>
 <p><strong>Task 2: Perpendicular Vector (Cross Product)</strong>
 Vectors: <span class="arithmatex">\(\vec{u}=[1, 0, 0]\)</span>, <span class="arithmatex">\(\vec{v}=[1, 1, 0]\)</span>.
-* <span class="arithmatex">\(\vec{u} \times \vec{v} = [0, 0, 1]\)</span>.</p>
+* <strong>Result:</strong> <span class="arithmatex">\(\vec{u} \times \vec{v} = [0, 0, 1]\)</span>.</p>
 <p><strong>Task 3: Coplanarity (Triple Product)</strong>
 Vectors: <span class="arithmatex">\(\vec{a}=[1, 0, 0]\)</span>, <span class="arithmatex">\(\vec{b}=[0, 1, 0]\)</span>, <span class="arithmatex">\(\vec{c}=[1, 1, 1]\)</span>.
-* Determinant = <span class="arithmatex">\(1\)</span>.
-* Result is not 0 <span class="arithmatex">\(\to\)</span> <strong>Not Coplanar</strong>. Volume = 1.</p>
+* <strong>Determinant:</strong> <span class="arithmatex">\(1\)</span>.
+* <strong>Result:</strong> Not 0 <span class="arithmatex">\(\to\)</span> <strong>Not Coplanar</strong>. Volume = 1.</p>
 <hr />
 <h2 id="applications">Applications</h2>
 <ul>
-<li><strong>Physics (Torque):</strong> Torque is a cross product: <span class="arithmatex">\(\tau = \vec{r} \times \vec{F}\)</span>.</li>
-<li><strong>Physics (Work):</strong> Work is a dot product: <span class="arithmatex">\(W = \vec{F} \cdot \vec{d}\)</span>.</li>
+<li><strong>Physics (Torque):</strong> Torque is a cross product:
+  $$
+  \tau = \vec{r} \times \vec{F}
+  $$</li>
+<li><strong>Physics (Work):</strong> Work is a dot product:
+  $$
+  W = \vec{F} \cdot \vec{d}
+  $$</li>
 <li><strong>Computer Graphics (Lighting):</strong> The brightness of a pixel is calculated using the <strong>Dot Product</strong> between the light ray vector and the surface normal vector.</li>
 </ul>
 <p><strong>Next Step:</strong> Lines and Planes in 3D Space.</p>
