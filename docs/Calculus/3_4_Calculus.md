@@ -24,11 +24,11 @@ $$
 
 | Function | Integral | Note |
 | :--- | :--- | :--- |
-| Power ($n \neq -1$) | $\frac{x^{n+1}}{n+1} + C$ | Power Rule (Reverse) |
-| $1/x$ | $\ln|x| + C$ | Log Rule |
-| Exponential | $e^x + C$ | Unchangeable |
-| Cosine | $\sin(x) + C$ | Positive sine |
-| Sine | $-\cos(x) + C$ | Negative cosine |
+| Power ($x^n$) | `x^(n+1) / (n+1)` | Power Rule ($n \neq -1$) |
+| Reciprocal ($1/x$) | `ln|x| + C` | Log Rule |
+| Exponential ($e^x$) | `e^x + C` | Unchangeable |
+| Cosine ($\cos x$) | `sin(x) + C` | Positive sine |
+| Sine ($\sin x$) | `-cos(x) + C` | Negative cosine |
 
 ### Step 3: Practice Calculation
 

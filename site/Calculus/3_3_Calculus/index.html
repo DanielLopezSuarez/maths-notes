@@ -1190,33 +1190,43 @@
 <h2 id="topic-1-definition-interpretation">Topic 1: Definition &amp; Interpretation</h2>
 <h3 id="step-1-building-intuition">Step 1: Building Intuition</h3>
 <p><strong>The Secant (Average Rate):</strong>
-Slope between two points (<span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>) separated by distance <span class="arithmatex">\(h\)</span>.
-$<span class="arithmatex">\(Slope = \frac{f(x+h) - f(x)}{h}\)</span>$</p>
+Slope between two points (<span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>) separated by distance <span class="arithmatex">\(h\)</span>.</p>
+<div class="arithmatex">\[
+\text{Slope} = \frac{f(x+h) - f(x)}{h}
+\]</div>
 <p><strong>The Tangent (Instantaneous Rate):</strong>
 We drag point <span class="arithmatex">\(B\)</span> closer to <span class="arithmatex">\(A\)</span> until <span class="arithmatex">\(h \to 0\)</span>. The secant becomes a <strong>Tangent Line</strong>.</p>
-<p><strong>Definition of the Derivative (<span class="arithmatex">\(f'\)</span>):</strong>
-$<span class="arithmatex">\(f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}\)</span>$</p>
+<p><strong>Definition of the Derivative (<span class="arithmatex">\(f'\)</span>):</strong></p>
+<div class="arithmatex">\[
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+\]</div>
 <h3 id="step-2-geometric-interpretation">Step 2: Geometric Interpretation</h3>
 <p>The derivative <span class="arithmatex">\(f'(x)\)</span> is the <strong>Slope of the Tangent Line</strong>.</p>
 <ul>
-<li><strong><span class="arithmatex">\(f'(x) &gt; 0\)</span>:</strong> Tangent points UP (Function is Increasing).</li>
-<li><strong><span class="arithmatex">\(f'(x) &lt; 0\)</span>:</strong> Tangent points DOWN (Function is Decreasing).</li>
-<li><strong><span class="arithmatex">\(f'(x) = 0\)</span>:</strong> Tangent is FLAT (Function is at a peak or valley).</li>
+<li><strong>Positive ($ &gt; 0$):</strong> Tangent points UP (Function is Increasing).</li>
+<li><strong>Negative ($ &lt; 0$):</strong> Tangent points DOWN (Function is Decreasing).</li>
+<li><strong>Zero ($ = 0$):</strong> Tangent is FLAT (Function is at a peak or valley).</li>
 </ul>
 <h3 id="step-3-practice-definition">Step 3: Practice (Definition)</h3>
 <p>Compute derivative of <span class="arithmatex">\(f(x)=x^2\)</span> at <span class="arithmatex">\(x=3\)</span>.</p>
 <ol>
 <li>
-<p><strong>Setup:</strong>
-    $<span class="arithmatex">\(\lim_{h \to 0} \frac{(3+h)^2 - 3^2}{h}\)</span>$</p>
+<p><strong>Setup:</strong></p>
+<div class="arithmatex">\[
+\lim_{h \to 0} \frac{(3+h)^2 - 3^2}{h}
+\]</div>
 </li>
 <li>
-<p><strong>Expand:</strong>
-    $<span class="arithmatex">\(\frac{9 + 6h + h^2 - 9}{h} = \frac{6h + h^2}{h}\)</span>$</p>
+<p><strong>Expand:</strong></p>
+<div class="arithmatex">\[
+\frac{9 + 6h + h^2 - 9}{h} = \frac{6h + h^2}{h}
+\]</div>
 </li>
 <li>
-<p><strong>Cancel <span class="arithmatex">\(h\)</span>:</strong>
-    $<span class="arithmatex">\(6 + h\)</span>$</p>
+<p><strong>Cancel <span class="arithmatex">\(h\)</span>:</strong></p>
+<div class="arithmatex">\[
+6 + h
+\]</div>
 </li>
 <li>
 <p><strong>Limit:</strong>
@@ -1236,59 +1246,87 @@ $<span class="arithmatex">\(f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}\)</sp
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(c\)</span></strong> (Constant)</td>
-<td style="text-align: left;"><strong><span class="arithmatex">\(0\)</span></strong></td>
+<td style="text-align: left;">Constant (<span class="arithmatex">\(c\)</span>)</td>
+<td style="text-align: left;"><span class="arithmatex">\(0\)</span></td>
 <td style="text-align: left;">No change</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(x^n\)</span></strong> (Power)</td>
-<td style="text-align: left;"><strong><span class="arithmatex">\(n \cdot x^{n-1}\)</span></strong></td>
+<td style="text-align: left;">Power (<span class="arithmatex">\(x^n\)</span>)</td>
+<td style="text-align: left;"><span class="arithmatex">\(n \cdot x^{n-1}\)</span></td>
 <td style="text-align: left;">Power Rule</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(\sin(x)\)</span></strong></td>
-<td style="text-align: left;"><strong><span class="arithmatex">\(\cos(x)\)</span></strong></td>
+<td style="text-align: left;">Sine (<span class="arithmatex">\(\sin x\)</span>)</td>
+<td style="text-align: left;"><span class="arithmatex">\(\cos(x)\)</span></td>
 <td style="text-align: left;">Cycle starts</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(\cos(x)\)</span></strong></td>
-<td style="text-align: left;"><strong><span class="arithmatex">\(-\sin(x)\)</span></strong></td>
+<td style="text-align: left;">Cosine (<span class="arithmatex">\(\cos x\)</span>)</td>
+<td style="text-align: left;"><span class="arithmatex">\(-\sin(x)\)</span></td>
 <td style="text-align: left;">Negative sign!</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(e^x\)</span></strong></td>
-<td style="text-align: left;"><strong><span class="arithmatex">\(e^x\)</span></strong></td>
+<td style="text-align: left;">Exponential (<span class="arithmatex">\(e^x\)</span>)</td>
+<td style="text-align: left;"><span class="arithmatex">\(e^x\)</span></td>
 <td style="text-align: left;">Unchangeable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(\ln(x)\)</span></strong></td>
-<td style="text-align: left;"><strong><span class="arithmatex">\(1/x\)</span></strong></td>
+<td style="text-align: left;">Log (<span class="arithmatex">\(\ln x\)</span>)</td>
+<td style="text-align: left;"><span class="arithmatex">\(1/x\)</span></td>
 <td style="text-align: left;">Log rule</td>
 </tr>
 </tbody>
 </table>
 <h3 id="step-2-differentiation-rules">Step 2: Differentiation Rules</h3>
-<p><strong>Product Rule:</strong>
-$<span class="arithmatex">\((f \cdot g)' = f \cdot g' + g \cdot f'\)</span>$</p>
-<p><strong>Quotient Rule:</strong>
-$<span class="arithmatex">\(\left(\frac{f}{g}\right)' = \frac{g \cdot f' - f \cdot g'}{g^2}\)</span>$</p>
+<p><strong>Product Rule:</strong></p>
+<div class="arithmatex">\[
+(f \cdot g)' = f \cdot g' + g \cdot f'
+\]</div>
+<p><strong>Quotient Rule:</strong></p>
+<div class="arithmatex">\[
+\left(\frac{f}{g}\right)' = \frac{g \cdot f' - f \cdot g'}{g^2}
+\]</div>
 <p><strong>Chain Rule (The Onion Rule):</strong>
-For functions inside functions (e.g., <span class="arithmatex">\(\sin(x^2)\)</span>). Differentiate Outer, keep Inner, multiply by Derivative of Inner.
-$<span class="arithmatex">\((f(g(x)))' = f'(g(x)) \cdot g'(x)\)</span>$</p>
+For functions inside functions (e.g., <span class="arithmatex">\(\sin(x^2)\)</span>). Differentiate Outer, keep Inner, multiply by Derivative of Inner.</p>
+<div class="arithmatex">\[
+(f(g(x)))' = f'(g(x)) \cdot g'(x)
+\]</div>
 <h3 id="step-3-practice-rules">Step 3: Practice (Rules)</h3>
-<p><strong>Product Rule:</strong> <span class="arithmatex">\(f(x) = x^2 \sin(x)\)</span>
-* <span class="arithmatex">\(f' = (x^2)(\cos x) + (\sin x)(2x) = x^2 \cos x + 2x \sin x\)</span>.</p>
-<p><strong>Chain Rule:</strong> <span class="arithmatex">\(f(x) = e^{3x}\)</span>
-* Outer (<span class="arithmatex">\(e^{\dots}\)</span>) <span class="arithmatex">\(\to\)</span> <span class="arithmatex">\(e^{3x}\)</span>.
-* Inner (<span class="arithmatex">\(3x\)</span>) <span class="arithmatex">\(\to\)</span> <span class="arithmatex">\(3\)</span>.
-* Result: <span class="arithmatex">\(3e^{3x}\)</span>.</p>
+<p><strong>Product Rule:</strong>
+Function: <span class="arithmatex">\(f(x) = x^2 \sin(x)\)</span></p>
+<ul>
+<li>
+<p>Apply rule:</p>
+<div class="arithmatex">\[
+f' = (x^2)(\cos x) + (\sin x)(2x)
+\]</div>
+</li>
+<li>
+<p>Result:</p>
+<div class="arithmatex">\[
+x^2 \cos x + 2x \sin x
+\]</div>
+</li>
+</ul>
+<p><strong>Chain Rule:</strong>
+Function: <span class="arithmatex">\(f(x) = e^{3x}\)</span></p>
+<ul>
+<li>Outer (<span class="arithmatex">\(e^{\dots}\)</span>) <span class="arithmatex">\(\to\)</span> <span class="arithmatex">\(e^{3x}\)</span>.</li>
+<li>Inner (<span class="arithmatex">\(3x\)</span>) <span class="arithmatex">\(\to\)</span> <span class="arithmatex">\(3\)</span>.</li>
+<li>
+<p>Result:</p>
+<div class="arithmatex">\[
+3e^{3x}
+\]</div>
+</li>
+</ul>
 <hr />
 <h2 id="topic-3-applications-optimization">Topic 3: Applications (Optimization)</h2>
 <h3 id="step-1-second-derivative-f">Step 1: Second Derivative (<span class="arithmatex">\(f''\)</span>)</h3>
 <p>The derivative of the derivative. It measures <strong>Curvature</strong> (Concavity).</p>
 <ul>
-<li><strong><span class="arithmatex">\(f'' &gt; 0\)</span>:</strong> Smile (Concave Up). Holds water.</li>
-<li><strong><span class="arithmatex">\(f'' &lt; 0\)</span>:</strong> Frown (Concave Down). Spills water.</li>
+<li><strong>Positive (<span class="arithmatex">\(+\)</span>):</strong> Smile (Concave Up). Holds water.</li>
+<li><strong>Negative (<span class="arithmatex">\(-\)</span>):</strong> Frown (Concave Down). Spills water.</li>
 </ul>
 <h3 id="step-2-finding-maxima-minima">Step 2: Finding Maxima &amp; Minima</h3>
 <ol>
@@ -1302,26 +1340,57 @@ $<span class="arithmatex">\((f(g(x)))' = f'(g(x)) \cdot g'(x)\)</span>$</p>
 <h3 id="step-3-full-analysis-example">Step 3: Full Analysis Example</h3>
 <p>Analyze <span class="arithmatex">\(f(x) = x^3 - 3x\)</span>.</p>
 <ol>
-<li><strong><span class="arithmatex">\(f'(x)\)</span>:</strong> <span class="arithmatex">\(3x^2 - 3\)</span>.</li>
-<li><strong>Roots:</strong> <span class="arithmatex">\(3(x^2-1) = 0 \implies x=1, x=-1\)</span>.</li>
-<li><strong><span class="arithmatex">\(f''(x)\)</span>:</strong> <span class="arithmatex">\(6x\)</span>.</li>
-<li><strong>Test <span class="arithmatex">\(x=-1\)</span>:</strong> <span class="arithmatex">\(f''(-1) = -6\)</span> (Negative) <span class="arithmatex">\(\to\)</span> <strong>Maximum</strong>.</li>
-<li><strong>Test <span class="arithmatex">\(x=1\)</span>:</strong> <span class="arithmatex">\(f''(1) = 6\)</span> (Positive) <span class="arithmatex">\(\to\)</span> <strong>Minimum</strong>.</li>
+<li>
+<p><strong>Derivative:</strong></p>
+<div class="arithmatex">\[
+f'(x) = 3x^2 - 3
+\]</div>
+</li>
+<li>
+<p><strong>Roots:</strong>
+    <span class="arithmatex">\(3(x^2-1) = 0 \implies x=1, x=-1\)</span>.</p>
+</li>
+<li>
+<p><strong>Second Derivative:</strong></p>
+<div class="arithmatex">\[
+f''(x) = 6x
+\]</div>
+</li>
+<li>
+<p><strong>Test <span class="arithmatex">\(x=-1\)</span>:</strong>
+    <span class="arithmatex">\(f''(-1) = -6\)</span> (Negative) <span class="arithmatex">\(\to\)</span> <strong>Maximum</strong>.</p>
+</li>
+<li>
+<p><strong>Test <span class="arithmatex">\(x=1\)</span>:</strong>
+    <span class="arithmatex">\(f''(1) = 6\)</span> (Positive) <span class="arithmatex">\(\to\)</span> <strong>Minimum</strong>.</p>
+</li>
 </ol>
 <hr />
 <h2 id="finale-comprehensive-test">Finale: Comprehensive Test</h2>
 <p><strong>Task 1: Differentiate</strong>
-<span class="arithmatex">\(f(x) = \sin(x) \cdot e^{2x}\)</span>.
-* <strong>Answer:</strong> <span class="arithmatex">\(e^{2x} \cos(x) + 2e^{2x} \sin(x)\)</span>.</p>
+Function: <span class="arithmatex">\(f(x) = \sin(x) \cdot e^{2x}\)</span>.</p>
+<ul>
+<li>
+<p><strong>Answer:</strong></p>
+<div class="arithmatex">\[
+e^{2x} \cos(x) + 2e^{2x} \sin(x)
+\]</div>
+</li>
+</ul>
 <p><strong>Task 2: Monotonicity</strong>
-Where is <span class="arithmatex">\(f(x) = 2x^3 - 6x\)</span> decreasing?
-* <span class="arithmatex">\(f' = 6x^2 - 6\)</span>. Negative between <span class="arithmatex">\(-1\)</span> and <span class="arithmatex">\(1\)</span>.
-* <strong>Answer:</strong> Interval <span class="arithmatex">\((-1, 1)\)</span>.</p>
+Where is <span class="arithmatex">\(f(x) = 2x^3 - 6x\)</span> decreasing?</p>
+<ul>
+<li>Derivative: <span class="arithmatex">\(f' = 6x^2 - 6\)</span>.</li>
+<li>Negative between <span class="arithmatex">\(-1\)</span> and <span class="arithmatex">\(1\)</span>.</li>
+<li><strong>Answer:</strong> Interval <span class="arithmatex">\((-1, 1)\)</span>.</li>
+</ul>
 <p><strong>Task 3: Optimization</strong>
-Find local max of <span class="arithmatex">\(f(x) = -x^2 + 4x\)</span>.
-* <span class="arithmatex">\(f' = -2x + 4 \to x=2\)</span>.
-* <span class="arithmatex">\(f'' = -2\)</span> (Frown).
-* <strong>Answer:</strong> Max at <span class="arithmatex">\(x=2\)</span>.</p>
+Find local max of <span class="arithmatex">\(f(x) = -x^2 + 4x\)</span>.</p>
+<ul>
+<li>Derivative: <span class="arithmatex">\(f' = -2x + 4 \to x=2\)</span>.</li>
+<li>Second Deriv: <span class="arithmatex">\(f'' = -2\)</span> (Frown).</li>
+<li><strong>Answer:</strong> Max at <span class="arithmatex">\(x=2\)</span>.</li>
+</ul>
 <hr />
 <h2 id="why-learn-this-physics-engineering">Why learn this? (Physics &amp; Engineering)</h2>
 <p><strong>Motion:</strong>
