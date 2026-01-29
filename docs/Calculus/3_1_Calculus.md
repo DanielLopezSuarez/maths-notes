@@ -29,7 +29,12 @@ Imagine a function as a machine.
 * **Codomain:** The set of all possible theoretical outputs (the type of result, e.g., "Real Numbers").
 * **Range (Image):** The set of actual outputs the function produces.
 
-**Example:** $f(x) = x^2$ mapping Reals to Reals ($f: \mathbb{R} \to \mathbb{R}$).
+**Example:**
+Mapping Reals to Reals ($f: \mathbb{R} \to \mathbb{R}$) for the function:
+
+$$
+f(x) = x^2
+$$
 
 * **Domain:** $\mathbb{R}$ (You can square any number).
 * **Codomain:** $\mathbb{R}$ (We expect real numbers).
@@ -41,7 +46,12 @@ Imagine a function as a machine.
 Determine if the following relations are functions:
 
 1.  **Relation A:** Input is a Person $\to$ Output is their biological Date of Birth.
-2.  **Relation B:** $x^2 + y^2 = 1$ (The unit circle). Input $x=0$.
+2.  **Relation B:** The unit circle equation below with Input $x=0$.
+
+    $$
+    x^2 + y^2 = 1
+    $$
+
 3.  **Relation C:** Input $1 \to 5$, Input $2 \to 6$, Input $1 \to 7$.
 
 **Answers:**
@@ -52,11 +62,13 @@ Determine if the following relations are functions:
 ### Step 4: Mini-quiz
 
 1.  **True/False:** The Range is always the same size or smaller than the Codomain.
-    * **True:** It is a subset of the Codomain.
+    * **Answer:** **True**. It is a subset of the Codomain.
+
 2.  **True/False:** A vertical line can cross a function's graph at two points.
-    * **False:** This is the "Vertical Line Test". If it crosses twice, one $x$ has two $y$'s (not a function).
+    * **Answer:** **False**. This is the "Vertical Line Test". If it crosses twice, one $x$ has two $y$'s (not a function).
+
 3.  **True/False:** If $f(2)=5$ and $f(2)=5$, it might still be a function.
-    * **True:** Listing the same valid pair twice doesn't break the rules.
+    * **Answer:** **True**. Listing the same valid pair twice doesn't break the rules.
 
 ---
 
@@ -77,7 +89,12 @@ We use the Cartesian Plane ($x, y$).
 
 ### Step 2: Practice (Graph Reading)
 
-Consider $f(x) = x - 2$.
+Consider the function:
+
+$$
+f(x) = x - 2
+$$
+
 * **Zero:** $x = 2$ (Since $2-2=0$).
 * **Domain:** $\mathbb{R}$ (All real numbers).
 * **Monotonicity:** Increasing everywhere (Line goes up).
@@ -145,19 +162,32 @@ Consider $y = x^2 - 4$ (Parabola shifted down).
 * **Minimum:** $y=-4$ (at $x=0$).
 
 **Task 3: Sequence Math**
-Find the 3rd term of $a_n = \frac{n}{n+1}$.
+Find the 3rd term of the sequence below:
+
+$$
+a_n = \frac{n}{n+1}
+$$
+
 * **Answer:** $a_3 = \frac{3}{3+1} = \frac{3}{4} = 0.75$.
 
 ---
 
 ## Why learn this? (Applications)
 
-* **Physics (Gravity):** Height is a function of time:
+* **Physics (Gravity):** Height is a function of time.
+
     $$
     h(t) = h_0 - 4.9t^2
     $$
-* **Economics:** Currency conversion is a linear function: $E(d) = 0.92d$.
-* **Biology:** Drug concentration is an exponential decay function:
+
+* **Economics:** Currency conversion is a linear function.
+
+    $$
+    E(d) = 0.92d
+    $$
+
+* **Biology:** Drug concentration is an exponential decay function.
+
     $$
     C(t) = C_0 \cdot e^{-kt}
     $$

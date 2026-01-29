@@ -8,34 +8,49 @@ This section introduces the **Derivative**, the mathematical tool for measuring 
 
 **The Secant (Average Rate):**
 Slope between two points ($A$ and $B$) separated by distance $h$.
-$$Slope = \frac{f(x+h) - f(x)}{h}$$
+
+$$
+\text{Slope} = \frac{f(x+h) - f(x)}{h}
+$$
 
 **The Tangent (Instantaneous Rate):**
 We drag point $B$ closer to $A$ until $h \to 0$. The secant becomes a **Tangent Line**.
 
 **Definition of the Derivative ($f'$):**
-$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+
+$$
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+$$
 
 ### Step 2: Geometric Interpretation
 
 The derivative $f'(x)$ is the **Slope of the Tangent Line**.
 
-* **$f'(x) > 0$:** Tangent points UP (Function is Increasing).
-* **$f'(x) < 0$:** Tangent points DOWN (Function is Decreasing).
-* **$f'(x) = 0$:** Tangent is FLAT (Function is at a peak or valley).
+* **Positive ($ > 0$):** Tangent points UP (Function is Increasing).
+* **Negative ($ < 0$):** Tangent points DOWN (Function is Decreasing).
+* **Zero ($ = 0$):** Tangent is FLAT (Function is at a peak or valley).
 
 ### Step 3: Practice (Definition)
 
 Compute derivative of $f(x)=x^2$ at $x=3$.
 
 1.  **Setup:**
-    $$\lim_{h \to 0} \frac{(3+h)^2 - 3^2}{h}$$
+
+    $$
+    \lim_{h \to 0} \frac{(3+h)^2 - 3^2}{h}
+    $$
 
 2.  **Expand:**
-    $$\frac{9 + 6h + h^2 - 9}{h} = \frac{6h + h^2}{h}$$
+
+    $$
+    \frac{9 + 6h + h^2 - 9}{h} = \frac{6h + h^2}{h}
+    $$
 
 3.  **Cancel $h$:**
-    $$6 + h$$
+
+    $$
+    6 + h
+    $$
 
 4.  **Limit:**
     As $h \to 0$, result is **6**.
@@ -48,34 +63,61 @@ Compute derivative of $f(x)=x^2$ at $x=3$.
 
 | Function $f(x)$ | Derivative $f'(x)$ | Note |
 | :--- | :--- | :--- |
-| **$c$** (Constant) | **$0$** | No change |
-| **$x^n$** (Power) | **$n \cdot x^{n-1}$** | Power Rule |
-| **$\sin(x)$** | **$\cos(x)$** | Cycle starts |
-| **$\cos(x)$** | **$-\sin(x)$** | Negative sign! |
-| **$e^x$** | **$e^x$** | Unchangeable |
-| **$\ln(x)$** | **$1/x$** | Log rule |
+| Constant ($c$) | $0$ | No change |
+| Power ($x^n$) | $n \cdot x^{n-1}$ | Power Rule |
+| Sine ($\sin x$) | $\cos(x)$ | Cycle starts |
+| Cosine ($\cos x$) | $-\sin(x)$ | Negative sign! |
+| Exponential ($e^x$) | $e^x$ | Unchangeable |
+| Log ($\ln x$) | $1/x$ | Log rule |
 
 ### Step 2: Differentiation Rules
 
 **Product Rule:**
-$$(f \cdot g)' = f \cdot g' + g \cdot f'$$
+
+$$
+(f \cdot g)' = f \cdot g' + g \cdot f'
+$$
 
 **Quotient Rule:**
-$$\left(\frac{f}{g}\right)' = \frac{g \cdot f' - f \cdot g'}{g^2}$$
+
+$$
+\left(\frac{f}{g}\right)' = \frac{g \cdot f' - f \cdot g'}{g^2}
+$$
 
 **Chain Rule (The Onion Rule):**
 For functions inside functions (e.g., $\sin(x^2)$). Differentiate Outer, keep Inner, multiply by Derivative of Inner.
-$$(f(g(x)))' = f'(g(x)) \cdot g'(x)$$
+
+$$
+(f(g(x)))' = f'(g(x)) \cdot g'(x)
+$$
 
 ### Step 3: Practice (Rules)
 
-**Product Rule:** $f(x) = x^2 \sin(x)$
-* $f' = (x^2)(\cos x) + (\sin x)(2x) = x^2 \cos x + 2x \sin x$.
+**Product Rule:**
+Function: $f(x) = x^2 \sin(x)$
 
-**Chain Rule:** $f(x) = e^{3x}$
+* Apply rule:
+
+    $$
+    f' = (x^2)(\cos x) + (\sin x)(2x)
+    $$
+
+* Result:
+
+    $$
+    x^2 \cos x + 2x \sin x
+    $$
+
+**Chain Rule:**
+Function: $f(x) = e^{3x}$
+
 * Outer ($e^{\dots}$) $\to$ $e^{3x}$.
 * Inner ($3x$) $\to$ $3$.
-* Result: $3e^{3x}$.
+* Result:
+
+    $$
+    3e^{3x}
+    $$
 
 ---
 
@@ -85,8 +127,8 @@ $$(f(g(x)))' = f'(g(x)) \cdot g'(x)$$
 
 The derivative of the derivative. It measures **Curvature** (Concavity).
 
-* **$f'' > 0$:** Smile (Concave Up). Holds water.
-* **$f'' < 0$:** Frown (Concave Down). Spills water.
+* **Positive ($+$):** Smile (Concave Up). Holds water.
+* **Negative ($-$):** Frown (Concave Down). Spills water.
 
 ### Step 2: Finding Maxima & Minima
 
@@ -99,29 +141,52 @@ The derivative of the derivative. It measures **Curvature** (Concavity).
 
 Analyze $f(x) = x^3 - 3x$.
 
-1.  **$f'(x)$:** $3x^2 - 3$.
-2.  **Roots:** $3(x^2-1) = 0 \implies x=1, x=-1$.
-3.  **$f''(x)$:** $6x$.
-4.  **Test $x=-1$:** $f''(-1) = -6$ (Negative) $\to$ **Maximum**.
-5.  **Test $x=1$:** $f''(1) = 6$ (Positive) $\to$ **Minimum**.
+1.  **Derivative:**
+
+    $$
+    f'(x) = 3x^2 - 3
+    $$
+
+2.  **Roots:**
+    $3(x^2-1) = 0 \implies x=1, x=-1$.
+
+3.  **Second Derivative:**
+
+    $$
+    f''(x) = 6x
+    $$
+
+4.  **Test $x=-1$:**
+    $f''(-1) = -6$ (Negative) $\to$ **Maximum**.
+
+5.  **Test $x=1$:**
+    $f''(1) = 6$ (Positive) $\to$ **Minimum**.
 
 ---
 
 ## Finale: Comprehensive Test
 
 **Task 1: Differentiate**
-$f(x) = \sin(x) \cdot e^{2x}$.
-* **Answer:** $e^{2x} \cos(x) + 2e^{2x} \sin(x)$.
+Function: $f(x) = \sin(x) \cdot e^{2x}$.
+
+* **Answer:**
+
+    $$
+    e^{2x} \cos(x) + 2e^{2x} \sin(x)
+    $$
 
 **Task 2: Monotonicity**
 Where is $f(x) = 2x^3 - 6x$ decreasing?
-* $f' = 6x^2 - 6$. Negative between $-1$ and $1$.
+
+* Derivative: $f' = 6x^2 - 6$.
+* Negative between $-1$ and $1$.
 * **Answer:** Interval $(-1, 1)$.
 
 **Task 3: Optimization**
 Find local max of $f(x) = -x^2 + 4x$.
-* $f' = -2x + 4 \to x=2$.
-* $f'' = -2$ (Frown).
+
+* Derivative: $f' = -2x + 4 \to x=2$.
+* Second Deriv: $f'' = -2$ (Frown).
 * **Answer:** Max at $x=2$.
 
 ---
