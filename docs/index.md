@@ -12,6 +12,7 @@ We have structured the content into three logical pillars, taking you from data 
 
 ### 1. Algebra: The Structure
 Focuses on **Linear Algebra**, the foundation of modern computing and data science.
+
 * **Matrices:** Definitions, operations, and special types.
 * **Determinants:** Sarrus, Laplace, and geometric interpretation.
 * **Inverse Matrices:** Cofactors and Gauss-Jordan elimination.
